@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<script>
+			var colors=["aqua", "black", "cyan", "green", "orange", "purple", "red"];
+			var target;
+			var guess_text;
+			var finished = false;
+			var guess = 0;
+			
+			function check_guess() {
+				if (colors.indexOf(guess_text) < 0) {
+					alert("I don’t recognize that color!\n\nPlease try again.");
+					return false;
+				}
+				if (guess_text > target) {
+					alert("Your input is alphabetically higher than mine!\n\nPlease try again.");
+					return false;
+				}
+				if (guess_text < target) {
+					alert("Your input is alphabetically lower than mine!\n\nPlease try again.");
+					return false;
+				}
+				return true;
+			}
+			
+			function do_game() {
+				target = colors[Math.floor(Math.random() * colors.length)];
+				alert("target: " + target);
+				while (!finished) {
+					guess_text = prompt("I am thinking of one these color:\n\n" + colors + "\n\n What color am I thinking of?");
+					finished = check_guess();
+					guess += 1;
+				}
+				document.body.style.backgroundColor = target;
+				alert("You are right! You took " + guess + " guesses!\n\nYou can see the color in the background");
+		}
+		</script>
+	</head>
+	<body onload=do_game()>
+	</body>
+</html>
+

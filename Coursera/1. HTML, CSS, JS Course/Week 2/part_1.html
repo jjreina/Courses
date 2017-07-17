@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<script>
+			var colors=["aqua", "black", "cyan", "green", "orange", "purple", "red"];
+			var target;
+			var guess_text;
+			var finished = false;
+			function do_game() {
+				target = colors[Math.floor(Math.random() * colors.length)];
+				alert("target: " + target);
+				while (!finished) {
+					guess_text = prompt("I am thinking of one these color:\n\n" + colors + "\n\n What color am I thinking of?");
+					if (target == guess_text) {
+						finished = true;
+					}
+				}
+		}
+		</script>
+	</head>
+	<body onload=do_game()>
+	</body>
+</html>
