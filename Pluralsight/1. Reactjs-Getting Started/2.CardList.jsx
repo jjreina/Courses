@@ -3,24 +3,24 @@
 
 const Card = (props) => {
 	return (
-  	<div>
-     <img width="75" src={props.avatar_url} />
-      <div style={{display: 'inline-block', marginLeft: 10}}>
-        <div style={{fontSize: '1.25em', fontWeight: 'bold'}}>
-          {props.name}
+        <div>
+        <img width="75" src={props.avatar_url} />
+        <div style={{display: 'inline-block', marginLeft: 10}}>
+            <div style={{fontSize: '1.25em', fontWeight: 'bold'}}>
+            {props.name}
+            </div>
+            <div>{props.company}</div>
         </div>
-        <div>{props.company}</div>
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
 const CardList = (props) => {
 	return (	
-  	<div>
-      {props.cards.map(card => <Card key={card.id} {...card} />)}
-    </div>
-  );
+        <div>
+        {props.cards.map(card => <Card key={card.id} {...card} />)}
+        </div>
+    );
 }
 
 class Form extends React.Component {
@@ -33,33 +33,33 @@ class Form extends React.Component {
       	this.props.onSubmit(resp.data);
         this.setState({ userName: '' });
       });
-  };
+    };
   
-	render() {
-  	return (
-    	<form onSubmit={this.handleSubmit}>
-        <input type="text" 
-          value={this.state.userName}
-          onChange={(event) => this.setState({ userName: event.target.value })}
-          placeholder="Guthub username" required/>
-        <button type="submit">Add card</button>
-      </form>
-    );
-  }
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+            <input type="text" 
+            value={this.state.userName}
+            onChange={(event) => this.setState({ userName: event.target.value })}
+            placeholder="Guthub username" required/>
+            <button type="submit">Add card</button>
+        </form>
+        );
+    }
 }
 
 class App extends React.Component {
 	state = {
-  	cards: []
-  };
+  	    cards: []
+    };
   
-  addNewCard = (cardInfo) => {
-  	this.setState(prevState => ({
-      cards: [...prevState.cards, cardInfo]
-    }));
-  };
+    addNewCard = (cardInfo) => {
+  	    this.setState(prevState => ({
+            cards: [...prevState.cards, cardInfo]
+        }));
+    };
   
-	render() {
+    render() {
   	return (
     	<div>
     	  <Form onSubmit={this.addNewCard}/>
