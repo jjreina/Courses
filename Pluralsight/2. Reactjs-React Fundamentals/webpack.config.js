@@ -1,8 +1,12 @@
+'use strict'
+var webpack = require('webpack');
 // The path module provides utilities for working with file and directory paths.
 var path = require('path');
 // Simplifies creation of HTML files to serve your webpack bundles
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+// Pug in to use lodash library
+var LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 // The directory name of the current module
 var basePath = __dirname;
 
@@ -46,7 +50,7 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx?$/, // The Condition must match
-                exclude: /node_modules/, // The Condition must NOT match
+                // exclude: /node_modules/, // The Condition must NOT match
                 // Webpack enables use of loaders to preprocess files. This allows you to bundle any static resource way beyond JavaScript
                 loader: 'babel-loader', // This package allows transpiling JavaScript files using Babel and webpack
             },
@@ -81,6 +85,15 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 loader: 'url-loader',
             },
+            {
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/,
+                options: {
+                    plugins: ['lodash'],
+                    presets: [['env', { modules: false, targets: { node: 4 } }]]
+                }
+            }
         ],
     },
     // This option controls if and how source maps are generated.
@@ -106,5 +119,6 @@ module.exports = {
             disable: false,
             allChunks: true,
         }),
+        new LodashModuleReplacementPlugin
     ]
 };
