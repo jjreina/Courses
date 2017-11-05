@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { Header } from './componet/header';
-import { Footer } from './componet/footer';
-import { Quiz } from './componet/quiz';
+import { Header } from './componets/header';
+import { Footer } from './componets/footer';
+import { Quiz } from './componets/quiz';
 import { data } from './model/entities';
 
 export class App extends React.Component {
