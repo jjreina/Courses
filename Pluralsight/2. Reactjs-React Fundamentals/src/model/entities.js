@@ -1,4 +1,4 @@
-export const data =  [
+export const mockData =  [
     {
         name: 'Mark Twain',
         imageUrl: require('../images/marktwain.jpg'),
@@ -9,7 +9,7 @@ export const data =  [
         name: 'Joseph Conrad',
         imageUrl: require('../images/josephconrad.png'),
         imageSource: 'Wikimedia Commons',
-        books: ['Heart od Darkness']
+        books: ['Heart of Darkness']
     },
     {
         name: 'J.K. Krowling',

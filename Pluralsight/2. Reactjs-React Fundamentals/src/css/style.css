@@ -19,3 +19,15 @@
 .answer:hover {
     background-color: #D0E3F0;
 }
+
+.neutral {
+    color: grey;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
