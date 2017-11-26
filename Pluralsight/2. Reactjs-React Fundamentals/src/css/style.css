@@ -31,3 +31,12 @@
 .fail {
     color: red;
 }
+
+.continueButton {
+    margin-left: 10px;
+}
+
+.info {
+    cursor: pointer;
+    height: 43px;
+}

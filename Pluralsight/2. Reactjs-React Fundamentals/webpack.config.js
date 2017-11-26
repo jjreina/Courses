@@ -92,12 +92,12 @@ module.exports = {
                 options: {
                     plugins: ['lodash'],
                     presets: [['env', { modules: false, targets: { node: 4 } }]]
-                }
+                },
             }
         ],
     },
     // This option controls if and how source maps are generated.
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     // webpack-dev-server can be used to quickly develop an application
     devServer: {
         contentBase: './dist', // Content base
@@ -119,6 +119,7 @@ module.exports = {
             disable: false,
             allChunks: true,
         }),
-        new LodashModuleReplacementPlugin
+        new LodashModuleReplacementPlugin,
+        new webpack.optimize.UglifyJsPlugin
     ]
 };

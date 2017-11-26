@@ -1,4 +1,5 @@
-# Second course of eight. Status in progress
+# Second course of eight.
+This project is an improved version of the project proposed in this course. Where versions as react, bootstrap have been update and new libraries as lodash and react-rourter has been used.
 * Webpack version:
     * *npm install*
     * *npm run start*
