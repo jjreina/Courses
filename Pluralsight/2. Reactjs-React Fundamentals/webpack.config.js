@@ -120,6 +120,5 @@ module.exports = {
             allChunks: true,
         }),
         new LodashModuleReplacementPlugin,
-        new webpack.optimize.UglifyJsPlugin
     ]
 };
