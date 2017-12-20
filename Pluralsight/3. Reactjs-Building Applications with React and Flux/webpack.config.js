@@ -22,7 +22,8 @@ module.exports = {
         app: './main.tsx',
         vendor: [
             'react',
-            'react-dom'
+            'react-dom',
+            'react-router'
         ],
         vendorStyle: [
             '../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -48,11 +49,7 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/, // The Condition must match
                 exclude: /node_modules/, // The Condition must NOT match
-                // Webpack enables use of loaders to preprocess files. This allows you to bundle any static resource way beyond JavaScript
-                loader: 'awesome-typescript-loader', // This package allows transpiling JavaScript files using Babel and webpack
-                options: { 
-                    useBabel: true, 
-                }
+                loader: 'ts-loader'
             },
             {
                 test: /\.css$/,
@@ -80,6 +77,10 @@ module.exports = {
             {
                 test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
                 loader: 'file-loader'
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader',
             }
         ],
     },

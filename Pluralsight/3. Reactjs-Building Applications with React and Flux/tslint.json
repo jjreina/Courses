@@ -21,6 +21,13 @@
         "triple-equals": [
             true,
             "allow-null-check"
+        ],
+        "interface-name": [
+            true, 
+            "never-prefix"
+        ],
+        "no-console": [
+            false
         ]
     },
     "jsRules": {
@@ -39,6 +46,13 @@
         "triple-equals": [
             true,
             "allow-null-check"
+        ],
+        "interface-name": [
+            true, 
+            "never-prefix"
+        ],
+        "no-console": [
+            false
         ]
     }
 }
