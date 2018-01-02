@@ -1,22 +1,18 @@
 import * as React from 'react';
+import { BrowserRouter  } from 'react-router-dom';
 
-import { About, Authors, Header, Home } from './components';
+import { Header } from './components';
+import { Routes } from './routes';
 
-interface Props {
-    route: string;
-}
-
-export const App: React.StatelessComponent<Props> = (props: { route: string }) => {
-    let Child;
-    switch (props.route) {
-        case 'about': Child = About; break;
-        case 'authors': Child = Authors; break;
-        default: Child = Home; break;
-    }
+export const App: React.StatelessComponent<{}> = () => {
     return (
-        <div>
-            <Header />
-            <Child />
-        </div>
+        <BrowserRouter >
+            <div>
+                <Header />
+                <div className="container-fluid">
+                    <Routes />
+                </div>
+            </div>
+        </BrowserRouter >
     );
 };
