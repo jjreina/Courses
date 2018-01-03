@@ -92,7 +92,8 @@ module.exports = {
         inline: true, // Enable watch and live reload
         host: 'localhost',
         port: 8081,
-        stats: 'errors-only' // To show only errors in your bundle
+        stats: 'errors-only', // To show only errors in your bundle,
+        historyApiFallback: true
     },
     // The plugins option is used to customize the webpack build process in a variety of ways.
     plugins: [
