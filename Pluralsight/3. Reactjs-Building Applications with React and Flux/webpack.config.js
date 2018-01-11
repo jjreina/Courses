@@ -36,6 +36,7 @@ module.exports = {
         path: path.join(basePath, "dist"),
         // A filename to use for the output file(s).
         filename: '[name].js',
+        publicPath: '/'
     },
     // These options determine how the different types of modules within a project will be treated
     module: {
