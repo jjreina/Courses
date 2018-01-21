@@ -6,6 +6,7 @@ import { Input } from '../common/textInput';
 interface Props {
     author: AuthorEntity;
     onChange: any;
+    onSave: any;
 }
 
 export class AuthorForm extends React.Component<Props, {}> {
@@ -27,7 +28,7 @@ export class AuthorForm extends React.Component<Props, {}> {
                     value={this.props.author.lastName}
                     onChange={this.props.onChange}
                 />
-                <input type="submit" value="Save" className="btn btn-default" />
+                <input type="submit" value="Save" className="btn btn-default" onClick={this.props.onSave}/>
             </form>
         );
     }

@@ -6,7 +6,7 @@ import { authors } from './authorData';
 
 // This would be performed on the server in a real app. Just stubbing in.
 const generateId = (author: AuthorEntity) => {
-    return `${author.firstName.toLowerCase()} - ${author.lastName.toLowerCase()}`;
+    return `${author.firstName.toLowerCase()}-${author.lastName.toLowerCase()}`;
 };
 
 // return cloned copy so that the item is passed by value instead of by reference

@@ -1,5 +1,7 @@
 import * as React from 'react';
+import { RouteComponentProps } from 'react-router-dom';
 
+import { AuthorApi } from '../../api/authorApi';
 import { AuthorEntity } from '../../model';
 import { AuthorForm } from './authorForm';
 
@@ -7,7 +9,7 @@ interface State {
     author: AuthorEntity;
 }
 
-export class ManageAuthorPage extends React.Component<{}, State> {
+export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, State> {
 
     constructor(props) {
         super(props);
@@ -18,7 +20,11 @@ export class ManageAuthorPage extends React.Component<{}, State> {
 
     public render() {
         return (
-            <AuthorForm author={this.state.author} onChange={this.setAuthorSatate}/>
+            <AuthorForm
+                author={this.state.author}
+                onChange={this.setAuthorSatate}
+                onSave={this.saveAuthor}
+            />
         );
     }
 
@@ -28,4 +34,11 @@ export class ManageAuthorPage extends React.Component<{}, State> {
         this.state.author[field] = value;
         this.setState({author: this.state.author});
     }
+
+    private saveAuthor = (event) => {
+        event.preventDefault();
+        AuthorApi.saveAuthor(this.state.author);
+        this.props.history.push('/authors');
+    }
 }
+
