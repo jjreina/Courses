@@ -7,6 +7,7 @@ interface Props {
     author: AuthorEntity;
     onChange: any;
     onSave: any;
+    errors?: any;
 }
 
 export class AuthorForm extends React.Component<Props, {}> {
@@ -20,6 +21,7 @@ export class AuthorForm extends React.Component<Props, {}> {
                     placeholder="First Name"
                     value={this.props.author.firstName}
                     onChange={this.props.onChange}
+                    error={this.props.errors.firstName}
                 />
                 <Input
                     name="lastName"
@@ -27,6 +29,7 @@ export class AuthorForm extends React.Component<Props, {}> {
                     placeholder="Last Name"
                     value={this.props.author.lastName}
                     onChange={this.props.onChange}
+                    error={this.props.errors.lastName}
                 />
                 <input type="submit" value="Save" className="btn btn-default" onClick={this.props.onSave}/>
             </form>
