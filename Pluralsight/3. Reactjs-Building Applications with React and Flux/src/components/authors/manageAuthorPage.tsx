@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
+import * as Toastr from 'toastr';
 
 import { AuthorApi } from '../../api/authorApi';
 import { AuthorEntity } from '../../model';
@@ -38,6 +39,7 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
     private saveAuthor = (event) => {
         event.preventDefault();
         AuthorApi.saveAuthor(this.state.author);
+        Toastr.success('Author saved.');
         this.props.history.push('/authors');
     }
 }

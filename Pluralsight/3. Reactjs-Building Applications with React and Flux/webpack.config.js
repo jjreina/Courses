@@ -26,7 +26,8 @@ module.exports = {
             'react-router'
         ],
         vendorStyle: [
-            '../node_modules/bootstrap/dist/css/bootstrap.css'
+            '../node_modules/bootstrap/dist/css/bootstrap.css',
+            '../node_modules/toastr/build/toastr.min.css'
         ]
     },
     // Configuration options tell webpack how to write the compiled files to disk.
