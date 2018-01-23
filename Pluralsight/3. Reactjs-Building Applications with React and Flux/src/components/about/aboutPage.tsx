@@ -1,10 +1,8 @@
 import * as React from 'react';
-import { Prompt } from 'react-router-dom';
 
 export const About: React.StatelessComponent<{}> = () => {
     return (
-            <div>
-            <Prompt message="Are you sure you want to leave About page?" />
+        <div>
             <h1>About</h1>
             <p>
                 This application uses the following technologies:

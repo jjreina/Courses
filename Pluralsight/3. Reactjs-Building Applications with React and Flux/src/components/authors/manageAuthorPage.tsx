@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { Prompt, Redirect, RouteComponentProps } from 'react-router-dom';
 import * as Toastr from 'toastr';
 
 import { AuthorApi } from '../../api/authorApi';
@@ -9,6 +9,8 @@ import { AuthorForm } from './authorForm';
 interface State {
     author: AuthorEntity;
     errors: any;
+    dirty: boolean;
+    redirect: boolean;
 }
 
 export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, State> {
@@ -18,25 +20,43 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
         this.state = {
             author: { id: '', firstName: '', lastName: ''},
             errors: {},
+            dirty: false,
+            redirect: false,
         };
     }
 
     public render() {
-        return (
-            <AuthorForm
-                author={this.state.author}
-                onChange={this.setAuthorSatate}
-                onSave={this.saveAuthor}
-                errors={this.state.errors}
-            />
-        );
+        const { author, dirty } = this.state;
+        if (this.state.redirect) {
+            return(
+                <Redirect to="/authors" />
+            );
+        } else {
+            return (
+                <div>
+                    <Prompt
+                        when={dirty}
+                        message="Leave without saving?"
+                    />
+                    <AuthorForm
+                        author={author}
+                        onChange={this.setAuthorSatate}
+                        onSave={this.saveAuthor}
+                        errors={this.state.errors}
+                    />
+                </div>
+            );
+        }
     }
 
     private setAuthorSatate = (event) => {
         const field: string = event.target.name;
         const value: string = event.target.value;
         this.state.author[field] = value;
-        this.setState({author: this.state.author});
+        this.setState({
+            author: this.state.author,
+            dirty: true,
+        });
     }
 
     private authorFormIsValid = (): boolean => {
@@ -63,8 +83,8 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
             return;
         }
         AuthorApi.saveAuthor(this.state.author);
+        this.setState({ dirty: false, redirect: true });
         Toastr.success('Author saved.');
-        this.props.history.push('/authors');
     }
 }
 
