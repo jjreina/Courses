@@ -25,6 +25,13 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
         };
     }
 
+    public componentWillMount() {
+        const authorId = this.props.match.params.id;
+        if (authorId) {
+            this.setState({author: AuthorApi.getAuthorById(authorId)});
+        }
+    }
+
     public render() {
         const { author, dirty } = this.state;
         if (this.state.redirect) {
