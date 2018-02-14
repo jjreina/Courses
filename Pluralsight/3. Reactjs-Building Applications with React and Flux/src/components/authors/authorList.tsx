@@ -16,6 +16,7 @@ export const AuthorList: React.StatelessComponent<Props> = ({authors}) => {
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
+                        <th/>
                     </tr>
                 </thead>
                 <tbody>

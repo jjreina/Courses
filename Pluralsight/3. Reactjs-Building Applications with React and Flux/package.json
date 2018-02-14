@@ -4,7 +4,7 @@
   "description": "SPA using React and Flux",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --watch",
     "build": "webpack",
     "lint": "tslint -c ./tslint.json --force src/**/*.ts src/**/*.tsx"
   },
@@ -21,7 +21,7 @@
   "author": "Juan Reina",
   "license": "ISC",
   "devDependencies": {
-    "@types/flux": "^3.1.4",
+    "@types/flux": "^3.1.6",
     "@types/lodash": "^4.14.91",
     "@types/react": "^16.0.29",
     "@types/react-dom": "^16.0.3",

@@ -2,8 +2,9 @@ import * as React from 'react';
 import { Prompt, Redirect, RouteComponentProps } from 'react-router-dom';
 import * as Toastr from 'toastr';
 
-import { AuthorApi } from '../../api/authorApi';
+import { AuthorActions } from '../../actions/authorActions';
 import { AuthorEntity } from '../../model';
+import AuthorStore from '../../store/authorStore';
 import { AuthorForm } from './authorForm';
 
 interface State {
@@ -28,7 +29,7 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
     public componentWillMount() {
         const authorId = this.props.match.params.id;
         if (authorId) {
-            this.setState({author: AuthorApi.getAuthorById(authorId)});
+            this.setState({author: AuthorStore.getAuthorById(authorId)});
         }
     }
 
@@ -89,7 +90,12 @@ export class ManageAuthorPage extends React.Component<RouteComponentProps<any>, 
         if (!this.authorFormIsValid()) {
             return;
         }
-        AuthorApi.saveAuthor(this.state.author);
+
+        if (this.state.author.id) {
+            AuthorActions.updateAuthor(this.state.author);
+        } else {
+            AuthorActions.creatAuthor(this.state.author);
+        }
         this.setState({ dirty: false, redirect: true });
         Toastr.success('Author saved.');
     }

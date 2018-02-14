@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import { AuthorApi } from '../../api';
+import { AuthorActions } from '../../actions/authorActions';
 import { AuthorEntity } from '../../model';
+import AuthorStore from '../../store/authorStore';
 import { AuthorList } from './authorList';
 
 interface State {
@@ -13,11 +14,15 @@ export class AuthorPage extends React.Component<{}, State> {
 
     constructor(props) {
         super(props);
-        this.state = { authors: [] };
+        this.state = { authors: AuthorStore.getAllAuthors() };
     }
 
-    public componentDidMount() {
-        this.setState({ authors: AuthorApi.getAllAuthors() });
+    public componentWillMount() {
+        AuthorStore.addChageListener(this.onChange.bind(this));
+    }
+
+    public componentWillUnmount() {
+        AuthorStore.removeChangeListener(this.onChange.bind(this));
     }
 
     public render() {
@@ -28,5 +33,9 @@ export class AuthorPage extends React.Component<{}, State> {
                 <AuthorList authors={this.state.authors} />
             </div>
         );
+    }
+
+    private onChange() {
+        this.setState({ authors: AuthorStore.getAllAuthors() });
     }
 }

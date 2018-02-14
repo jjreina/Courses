@@ -42,7 +42,7 @@ const saveAuthor = (author: AuthorEntity): AuthorEntity => {
 
 const deleteAuthor = (id: string) => {
     console.log('Pretend this just deleted the author from the DB via an AJAX call...');
-    _.remove(authors, { id });
+    _.remove(authors, id);
 };
 
 export const AuthorApi = {
