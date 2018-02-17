@@ -1,0 +1,53 @@
+{
+  "name": "react-plus-redux",
+  "version": "1.0.0",
+  "description": "SPA using React and Redux",
+  "main": "index.html",
+  "scripts": {
+    "start": "webpack-dev-server --watch",
+    "build": "webpack",
+    "lint": "tslint -c ./tslint.json --force src/**/*.ts src/**/*.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjreina/Courses/tree/master/Pluralsight"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "typescript",
+    "webpack"
+  ],
+  "author": "Juan Reina",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.0.29",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router": "^4.0.19",
+    "@types/react-router-dom": "^4.2.3",
+    "@types/toastr": "^2.1.35",
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "prop-types": "^15.6.0",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "toastr": "^2.1.4"
+  }
+}
