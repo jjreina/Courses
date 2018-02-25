@@ -20,6 +20,9 @@ module.exports = {
     entry: {
         // App entry point.
         app: './main.tsx',
+        appStyles: [
+            './styles/styles.css',
+          ],
         vendor: [
             'react',
             'react-dom',

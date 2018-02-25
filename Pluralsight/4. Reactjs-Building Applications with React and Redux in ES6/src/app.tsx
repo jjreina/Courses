@@ -1,7 +1,16 @@
 import * as React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
-export const App: React.StatelessComponent<{}> = () => {
+import { Header } from './components/common/header';
+import { Routes } from './routes';
+
+export const App: React.StatelessComponent = () => {
     return(
-        <h1>Hello App</h1>
+        <BrowserRouter>
+            <div className="container-fluid">
+                <Header />
+                <Routes />
+            </div>
+        </BrowserRouter>
     );
 };
