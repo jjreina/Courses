@@ -1,10 +1,22 @@
-import { actionsEnum } from '../actions/actionsEnums';
-import { CourseEntity } from '../model/course';
+import courseApi from '../api/mockCourseApi';
 
-export const createCourse = (course: CourseEntity) => {
-    console.debug('2: inside of create course Action.');
+import { actionsEnum } from '../actions/actionsEnums';
+
+export const loadCoursesSuccess = (courses) => {
+    console.debug('2: When data arrive launch the load action.');
     return {
-        payload: course,
-        type: actionsEnum.CREATE_COURSE,
+        payload: courses,
+        type: actionsEnum.LOAD_COURSES_SUCCESS,
+    };
+};
+
+export const loadCourses = () => {
+    console.debug('1: Dispatch initial load via promise.');
+    return (dispatch) => {
+        return courseApi.getAllCourses().then((courses) => {
+            dispatch(loadCoursesSuccess(courses));
+        }).catch((error) => {
+            throw(error);
+        });
     };
 };

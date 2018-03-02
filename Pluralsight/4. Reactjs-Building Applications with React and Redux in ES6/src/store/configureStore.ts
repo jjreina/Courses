@@ -1,4 +1,5 @@
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
+import reduxThunk from 'redux-thunk';
 
 import { applyMiddleware, createStore } from 'redux';
 import { rootReducer } from '../reducers';
@@ -8,6 +9,6 @@ export const configureStore = (initialState?) => {
     return createStore(
         rootReducer,
         initialState,
-        applyMiddleware(reduxImmutableStateInvariant()),
+        applyMiddleware(reduxThunk, reduxImmutableStateInvariant()),
     );
 };
