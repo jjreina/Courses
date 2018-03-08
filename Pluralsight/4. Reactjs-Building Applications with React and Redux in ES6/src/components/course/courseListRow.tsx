@@ -7,7 +7,7 @@ interface Props {
     course: CourseEntity;
 }
 
-export const CourseListRow: React.StatelessComponent<Props> = (props) => {
+export const CourseListRow = (props: { course: CourseEntity }) => {
     return (
         <tr>
             <td><a href={props.course.watchHref} target="_blanck">Watch</a></td>
