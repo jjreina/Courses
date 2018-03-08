@@ -18,7 +18,7 @@ class CoursesPage extends React.Component<Props, {}> {
     }
 
     public render() {
-        return(
+        return (
             <div>
                 <h1>Courses</h1>
                 <input

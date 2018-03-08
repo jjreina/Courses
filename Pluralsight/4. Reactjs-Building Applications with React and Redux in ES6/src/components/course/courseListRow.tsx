@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 import { CourseEntity } from '../../model/course';
 
-export const CourseListRow = (props: { course: CourseEntity }) => {
+interface Props {
+    course: CourseEntity;
+}
+
+export const CourseListRow: React.StatelessComponent<Props> = (props) => {
     return (
         <tr>
             <td><a href={props.course.watchHref} target="_blanck">Watch</a></td>

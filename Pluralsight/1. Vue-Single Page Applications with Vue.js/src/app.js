@@ -1,9 +1,6 @@
 import Vue from 'vue'
+import AppLayout from './theme/Layout.vue'
 
 export const app = new Vue({
-  // el: '#root',
-  template: '<h1>{{hello}}</h1>',
-  data: {
-    hello: 'Hi there'
-  }
+  ...AppLayout
 })
