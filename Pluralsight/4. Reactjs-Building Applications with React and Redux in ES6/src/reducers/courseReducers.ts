@@ -12,7 +12,7 @@ export const courseReducer = (state: CourseEntity[] = initialState.courses, acti
         case actionsEnum.UPDATE_COURSE_SUCCESS:
             return [
                 ...state.filter( (course) => course.id !== action.payload.id),
-                Object.assign({}, action.course)];
+                Object.assign({}, action.payload)];
         default:
             return state;
     }

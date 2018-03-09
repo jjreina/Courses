@@ -30,6 +30,12 @@ class ManageCourse extends React.Component<Props, State> {
         };
     }
 
+    public  componentWillReceiveProps(nextProps) {
+        if (this.props.course.id !== nextProps.course.id) {
+            this.setState( {course: Object.assign({}, nextProps.course)} );
+        }
+    }
+
     public render() {
         return (
             <CourseForm
