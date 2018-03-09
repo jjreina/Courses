@@ -17,6 +17,7 @@ interface Props {
     authors: AuthorEntity[];
     actions: any;
     history?: any;
+    course: CourseEntity;
 }
 
 class ManageCourse extends React.Component<Props, State> {
@@ -24,7 +25,7 @@ class ManageCourse extends React.Component<Props, State> {
         super(props, context);
 
         this.state = {
-            course: new CourseEntity(),
+            course: Object.assign({}, this.props.course),
             errors: {},
         };
     }
@@ -56,7 +57,7 @@ class ManageCourse extends React.Component<Props, State> {
 }
 
 const getCourseById = (courses: CourseEntity[], id: string) => {
-    const course = courses.filter(course => course.id === id);
+    const course = courses.filter((c) => c.id === id);
     return course.length ? course[0] : null;
 };
 
@@ -76,12 +77,11 @@ const mapStateToProps = (state, ownProps) => {
     });
     return {
         authors: authorsFormattedForDropdown,
-        course: course,
+        course,
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
-    console.log('asd');
     return {
         actions: bindActionCreators(courseActions, dispatch),
     };
