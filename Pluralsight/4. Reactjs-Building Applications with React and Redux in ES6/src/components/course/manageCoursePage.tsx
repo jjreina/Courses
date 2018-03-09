@@ -55,8 +55,18 @@ class ManageCourse extends React.Component<Props, State> {
     }
 }
 
+const getCourseById = (courses: CourseEntity[], id: string) => {
+    const course = courses.filter(course => course.id === id);
+    return course.length ? course[0] : null;
+};
+
 const mapStateToProps = (state, ownProps) => {
-    const course: CourseEntity = new CourseEntity();
+    const courseId: string = ownProps.match.params.id;
+    let course: CourseEntity = new CourseEntity();
+
+    if (courseId) {
+        course = getCourseById(state.courseReducer, courseId);
+    }
 
     const authorsFormattedForDropdown = state.authorReducer.map((author) => {
         return {
@@ -66,11 +76,12 @@ const mapStateToProps = (state, ownProps) => {
     });
     return {
         authors: authorsFormattedForDropdown,
-        course,
+        course: course,
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
+    console.log('asd');
     return {
         actions: bindActionCreators(courseActions, dispatch),
     };
