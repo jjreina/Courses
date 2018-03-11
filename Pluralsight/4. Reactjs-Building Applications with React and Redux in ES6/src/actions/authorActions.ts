@@ -12,7 +12,7 @@ const loadAuthorsSuccess = (authors) => {
 
 export const loadAuthors = () => {
     return (dispatch) => {
-        dispatch(beginAjaxCall);
+        dispatch(beginAjaxCall());
         return authorApi.getAllAuthors().then((authors) => {
             dispatch(loadAuthorsSuccess(authors));
         }).catch((error) => {
