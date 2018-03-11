@@ -1,26 +1,29 @@
 import * as React from 'react';
-import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
-import { loadAuthors } from './actions/authorActions';
-import { loadCourses } from './actions/courseActions';
-import { Header } from './components/common/header';
+import Header from './components/common/header';
 import { Routes } from './routes';
-import { configureStore } from './store/configureStore';
 
-const store = configureStore();
-store.dispatch(loadCourses());
-store.dispatch(loadAuthors());
+interface Props {
+    loading: boolean;
+}
 
-export const App: React.StatelessComponent = () => {
+const App: React.StatelessComponent<Props> = ({loading}) => {
     return(
-        <Provider store={store}>
-            <BrowserRouter>
-                <div className="container-fluid">
-                    <Header />
-                    <Routes />
-                </div>
-            </BrowserRouter>
-        </Provider>
+        <BrowserRouter>
+            <div className="container-fluid">
+                <Header loading={loading}/>
+                <Routes />
+            </div>
+        </BrowserRouter>
     );
 };
+
+const mapStateToProps = (state, ownProps) => {
+    return {
+        loading: state.ajaxCallsInProgress > 0,
+    };
+};
+
+export default connect(mapStateToProps)(App);

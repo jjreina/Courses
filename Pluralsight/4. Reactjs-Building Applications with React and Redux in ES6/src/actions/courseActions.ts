@@ -2,6 +2,7 @@ import courseApi from '../api/mockCourseApi';
 
 import { actionsEnum } from '../actions/actionsEnums';
 import { CourseEntity } from '../model/course';
+import { beginAjaxCall } from './ajaxStatusActions';
 
 const loadCoursesSuccess = (courses) => {
     console.debug('2: When data arrive launch the load action.');
@@ -28,6 +29,7 @@ const updateCourseSuccess = (course) => {
 export const loadCourses = () => {
     console.debug('1: Dispatch initial load via promise.');
     return (dispatch) => {
+        dispatch(beginAjaxCall());
         return courseApi.getAllCourses().then((courses) => {
             dispatch(loadCoursesSuccess(courses));
         }).catch((error) => {
@@ -38,6 +40,7 @@ export const loadCourses = () => {
 
 export const saveCourse = (course: CourseEntity) => {
     return (dispatch) => {
+        dispatch(beginAjaxCall());
         return courseApi.saveCourse(course).then((savedCourse) => {
             course.id ? dispatch(updateCourseSuccess(savedCourse)) :
                 dispatch(createCourseSuccess(savedCourse));

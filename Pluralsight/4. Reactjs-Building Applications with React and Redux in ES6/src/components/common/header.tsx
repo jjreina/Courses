@@ -3,7 +3,11 @@ import { NavLink } from 'react-router-dom';
 
 import { LoadingDots } from './loadingDots';
 
-export const Header: React.StatelessComponent = () => {
+interface Props {
+    loading: boolean;
+}
+
+const Header: React.StatelessComponent<Props> = ({loading}) => {
     const activeStyle = { color: 'orange' };
     return(
         <nav>
@@ -12,7 +16,9 @@ export const Header: React.StatelessComponent = () => {
             <NavLink to="/courses" activeStyle={activeStyle}>Courses</NavLink>
             {' | '}
             <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
-            <LoadingDots interval={100} dots={20}/>
+            {loading && <LoadingDots interval={100} dots={20}/>}
         </nav>
     );
 };
+
+export default Header;
