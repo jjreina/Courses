@@ -2,6 +2,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
+import * as Toastr from 'toastr';
 
 import * as courseActions from '../../actions/courseActions';
 import { AuthorEntity } from '../../model/author';
@@ -11,6 +12,7 @@ import { CourseForm } from './courseForm';
 interface State {
     course: CourseEntity;
     errors: any;
+    saving: boolean;
 }
 
 interface Props {
@@ -27,6 +29,7 @@ class ManageCourse extends React.Component<Props, State> {
         this.state = {
             course: Object.assign({}, this.props.course),
             errors: {},
+            saving: false,
         };
     }
 
@@ -44,6 +47,7 @@ class ManageCourse extends React.Component<Props, State> {
                 onSave={this.saveCourse}
                 course={this.state.course}
                 errors={this.state.errors}
+                saving={this.state.saving}
             />
         );
     }
@@ -57,7 +61,18 @@ class ManageCourse extends React.Component<Props, State> {
 
     private saveCourse = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
-        this.props.actions.saveCourse(this.state.course);
+        this.setState({ saving: true });
+        this.props.actions.saveCourse(this.state.course)
+            .then(() => this.redirect())
+            .catch((error) => {
+                Toastr.error(error);
+                this.setState({ saving: false });
+            });
+    }
+
+    private redirect = () => {
+        this.setState({ saving: false });
+        Toastr.success('Course saved');
         this.props.history.push('/courses');
     }
 }

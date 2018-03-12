@@ -10,12 +10,12 @@ interface Props {
     allAuthors: AuthorEntity[];
     onChange: any;
     onSave: any;
-    loading?: any;
     errors: any;
+    saving: boolean;
 }
 
 export const CourseForm: React.StatelessComponent<Props> =
-    ({course, allAuthors, onSave, onChange, loading, errors}) => {
+    ({course, allAuthors, onSave, onChange, errors, saving}) => {
     return(
         <form>
             <h1>Manage Course</h1>
@@ -50,8 +50,8 @@ export const CourseForm: React.StatelessComponent<Props> =
             />
             <input
                 type="submit"
-                disabled={loading}
-                value={loading ? 'Saving...' : 'Save'}
+                disabled={saving}
+                value={saving ? 'Saving...' : 'Save'}
                 className="btn btn-primary"
                 onClick={onSave}
             />

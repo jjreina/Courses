@@ -2,7 +2,7 @@ import courseApi from '../api/mockCourseApi';
 
 import { actionsEnum } from '../actions/actionsEnums';
 import { CourseEntity } from '../model/course';
-import { beginAjaxCall } from './ajaxStatusActions';
+import { ajaxCallError, beginAjaxCall } from './ajaxStatusActions';
 
 const loadCoursesSuccess = (courses) => {
     console.debug('2: When data arrive launch the load action.');
@@ -45,6 +45,7 @@ export const saveCourse = (course: CourseEntity) => {
             course.id ? dispatch(updateCourseSuccess(savedCourse)) :
                 dispatch(createCourseSuccess(savedCourse));
         }).catch((error) => {
+            dispatch(ajaxCallError());
             throw(error);
         });
     };
