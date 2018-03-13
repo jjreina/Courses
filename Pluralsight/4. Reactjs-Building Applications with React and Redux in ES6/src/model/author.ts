@@ -6,6 +6,6 @@ export class AuthorEntity {
     public constructor() {
         this.id = '',
         this.firstName = '',
-        this.lastName = ''
+        this.lastName = '';
     }
 }

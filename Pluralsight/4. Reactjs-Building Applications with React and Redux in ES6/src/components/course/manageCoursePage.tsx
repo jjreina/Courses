@@ -22,7 +22,7 @@ interface Props {
     course: CourseEntity;
 }
 
-class ManageCourse extends React.Component<Props, State> {
+export class ManageCourse extends React.Component<Props, State> {
     constructor(props, context) {
         super(props, context);
 
