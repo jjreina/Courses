@@ -7,7 +7,7 @@ import { TextInput } from '../common/textInput';
 
 interface Props {
     course: CourseEntity;
-    allAuthors: AuthorEntity[];
+    allAuthors?: AuthorEntity[];
     onChange: any;
     onSave: any;
     errors: any;
