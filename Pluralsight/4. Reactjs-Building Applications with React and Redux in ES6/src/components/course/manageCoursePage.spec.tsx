@@ -6,9 +6,9 @@ import { CourseEntity } from '../../model/course';
 import { ManageCourse } from './manageCoursePage';
 
 describe('Manage Course Page', () => {
-    it('sets error message whe trying to save empty title', () => {
+    it('sets error message when trying to save empty title', () => {
         const props = {
-            actions: { saveCourse: () => { return Promise.resolve(); } },
+            actions: { saveCourse: () => Promise.resolve() },
             authors: [],
             course: new CourseEntity(),
         };
@@ -17,6 +17,6 @@ describe('Manage Course Page', () => {
         expect(saveButton.prop('type')).to.equal('submit');
 
         saveButton.simulate('click');
-        expect(wrapper.state().console.errors.title).to.equal('');
+        expect(wrapper.state().errors.title).to.equal('Title must be at least 5 characters.');
     });
 });

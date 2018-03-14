@@ -12,14 +12,14 @@ const loadCoursesSuccess = (courses) => {
     };
 };
 
-const createCourseSuccess = (course) => {
+export const createCourseSuccess = (course) => {
     return {
         payload: course,
         type: actionsEnum.CREATE_COURSE_SUCCESS,
     };
 };
 
-const updateCourseSuccess = (course) => {
+export const updateCourseSuccess = (course) => {
     return {
         payload: course,
         type: actionsEnum.UPDATE_COURSE_SUCCESS,

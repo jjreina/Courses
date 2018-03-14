@@ -7,6 +7,7 @@ import * as Toastr from 'toastr';
 import * as courseActions from '../../actions/courseActions';
 import { AuthorEntity } from '../../model/author';
 import { CourseEntity } from '../../model/course';
+import { authorsFormattedForDropdown } from '../../selectors/selectors';
 import { CourseForm } from './courseForm';
 
 interface State {
@@ -59,8 +60,25 @@ export class ManageCourse extends React.Component<Props, State> {
         return this.setState({ course });
     }
 
+    private courseFormValid = () => {
+        let formIsValid: boolean = true;
+        const errors: any = {};
+
+        if (this.state.course.title.length < 5) {
+            errors.title = 'Title must be at least 5 characters.';
+            formIsValid = false;
+        }
+
+        this.setState({ errors });
+        return formIsValid;
+    }
+
     private saveCourse = (event: React.ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
+
+        if (!this.courseFormValid()) {
+            return;
+        }
         this.setState({ saving: true });
         this.props.actions.saveCourse(this.state.course)
             .then(() => this.redirect())
@@ -90,14 +108,8 @@ const mapStateToProps = (state, ownProps) => {
         course = getCourseById(state.courseReducer, courseId);
     }
 
-    const authorsFormattedForDropdown = state.authorReducer.map((author) => {
-        return {
-            text: author.firstName + ' ' + author.lastName,
-            value: author.id,
-        };
-    });
     return {
-        authors: authorsFormattedForDropdown,
+        authors: authorsFormattedForDropdown(state.authorReducer),
         course,
     };
 };
