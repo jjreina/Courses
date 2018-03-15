@@ -13,6 +13,7 @@ export const CourseList = (props: { courses: CourseEntity[] }) => {
                     <th>Author</th>
                     <th>Category</th>
                     <th>Length</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody>

@@ -7,6 +7,14 @@ interface Props {
     course: CourseEntity;
 }
 
+const style = {
+    textAlign: 'center',
+};
+
+const deleteCourse = () => {
+    console.log('Deleting course');
+};
+
 export const CourseListRow = (props: { course: CourseEntity }) => {
     return (
         <tr>
@@ -15,6 +23,7 @@ export const CourseListRow = (props: { course: CourseEntity }) => {
             <td>{props.course.authorId}</td>
             <td>{props.course.category}</td>
             <td>{props.course.length}</td>
+            <td style={style}><span onClick={deleteCourse} className="glyphicon glyphicon-trash"/></td>
         </tr>
     );
 };
