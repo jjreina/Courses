@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { loadAuthors } from './actions/authorActions';
 import { loadCourses } from './actions/courseActions';
 import App from './app';
-import { configureStore } from './store/configureStore';
+import configureStore from './store/configureStore';
 
 const store = configureStore();
 store.dispatch(loadCourses());

@@ -27,7 +27,7 @@ module.exports = {
             {
                 test: /\.(ts|tsx)$/, // The Condition must match
                 exclude: /node_modules/, // The Condition must NOT match
-                loader: 'ts-loader'
+                loader: 'babel-loader!ts-loader'
             },
             {
                 test: /\.css$/,

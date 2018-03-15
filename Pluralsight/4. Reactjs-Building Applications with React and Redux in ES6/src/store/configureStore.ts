@@ -1,14 +1,12 @@
-import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
-import reduxThunk from 'redux-thunk';
+import {configureStore as dev} from './configureStore.dev';
+import {configureStore as prod} from './configureStore.prod';
 
-import { applyMiddleware, createStore } from 'redux';
-import { rootReducer } from '../reducers';
+let configureStore: any;
 
-export const configureStore = (initialState?) => {
-    console.debug('0: Initialize all - Redux flow - Configure Store.');
-    return createStore(
-        rootReducer,
-        initialState,
-        applyMiddleware(reduxThunk, reduxImmutableStateInvariant()),
-    );
-};
+if (process.env.NODE_ENV === 'production') {
+    configureStore = prod;
+} else {
+    configureStore = dev;
+}
+
+export default configureStore;

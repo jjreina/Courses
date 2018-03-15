@@ -8,7 +8,9 @@ const setup = (saving: boolean) => {
     const props = {
         course: new CourseEntity(),
         errors: {},
+        // tslint:disable-next-line:no-empty
         onChange: () => {},
+        // tslint:disable-next-line:no-empty
         onSave: () => {},
         saving,
     };

@@ -17,7 +17,7 @@ export class LoadingDots extends React.Component<Props, State> {
         interval: 300,
     };
 
-    private interval: number;
+    private interval: any;
 
     constructor(props) {
         super(props);
