@@ -7,10 +7,10 @@
     "start:dev": "webpack-dev-server --watch --config ./webpack.config.dev.js",
     "start:prod": "node server",
     "build:dev": "webpack --config ./webpack.config.dev.js",
-    "build:prod": "webpack --config ./webpack.config.prod.js -p",
+    "build:prod": "npm run lint && npm run test && rimraf dist && webpack --config ./webpack.config.prod.js -p",
     "lint": "tslint -c ./tslint.json --force src/**/*.ts src/**/*.tsx",
-    "test": "karma start --signal-run",
-    "test:watch": "karma start --no-signal-run"
+    "test": "karma start --single-run",
+    "test:watch": "karma start --no-single-run"
   },
   "repository": {
     "type": "git",
@@ -65,6 +65,7 @@
     "react-addons-test-utils": "^15.6.2",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-mock-store": "^1.5.1",
+    "rimraf": "^2.6.2",
     "sinon": "^4.4.0",
     "sinon-chai": "^2.14.0",
     "style-loader": "^0.19.0",
