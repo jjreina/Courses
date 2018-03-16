@@ -1,21 +1,26 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
 
+import * as courseActions from '../../actions/courseActions';
 import { CourseEntity } from '../../model/course';
 
 interface Props {
+    actions?: any;
     course: CourseEntity;
+    onDeleteCourse: any;
 }
 
 const style = {
     textAlign: 'center',
 };
 
-const deleteCourse = () => {
-    console.log('Deleting course');
-};
+export const CourseListRow: React.StatelessComponent<Props> = (props) => {
+    const onClickTrash = () => {
+        props.onDeleteCourse(props.course.id);
+    };
 
-export const CourseListRow = (props: { course: CourseEntity }) => {
     return (
         <tr>
             <td><a href={props.course.watchHref} target="_blanck">Watch</a></td>
@@ -23,7 +28,9 @@ export const CourseListRow = (props: { course: CourseEntity }) => {
             <td>{props.course.authorId}</td>
             <td>{props.course.category}</td>
             <td>{props.course.length}</td>
-            <td style={style}><span onClick={deleteCourse} className="glyphicon glyphicon-trash"/></td>
+            <td style={style}>
+                <span onClick={onClickTrash} className="glyphicon glyphicon-trash"/>
+            </td>
         </tr>
     );
 };

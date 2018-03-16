@@ -3,7 +3,16 @@ import * as React from 'react';
 import { CourseEntity } from '../../model/course';
 import { CourseListRow } from './courseListRow';
 
-export const CourseList = (props: { courses: CourseEntity[] }) => {
+interface Props {
+    courses: CourseEntity[];
+    onDeleteCourse: any;
+}
+
+export const CourseList: React.StatelessComponent<Props> = (props) => {
+    const onClickTrash = (deleteCourse) => {
+        props.onDeleteCourse(deleteCourse);
+    };
+
     return(
         <table className="table">
             <thead>
@@ -17,7 +26,8 @@ export const CourseList = (props: { courses: CourseEntity[] }) => {
                 </tr>
             </thead>
             <tbody>
-                {props.courses.map((course) => <CourseListRow key={course.id} course={course}/>)}
+                {/* tslint:disable-next-line:max-line-length*/}
+                {props.courses.map((course) => <CourseListRow key={course.id} course={course} onDeleteCourse={onClickTrash}/>)}
             </tbody>
         </table>
     );

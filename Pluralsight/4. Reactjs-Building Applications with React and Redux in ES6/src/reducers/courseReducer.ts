@@ -13,6 +13,8 @@ export const courseReducer = (state: CourseEntity[] = initialState.courses, acti
             return [
                 ...state.filter( (course) => course.id !== action.payload.id),
                 Object.assign({}, action.payload)];
+        case actionsEnum.DELETE_COURSE_SUCCESS:
+            return action.payload;
         default:
             return state;
     }

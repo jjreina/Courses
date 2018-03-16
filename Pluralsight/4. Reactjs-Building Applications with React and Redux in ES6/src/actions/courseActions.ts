@@ -26,6 +26,13 @@ export const updateCourseSuccess = (course) => {
     };
 };
 
+export const deleteCourseSuccess = (courses) => {
+    return {
+        payload: courses,
+        type: actionsEnum.DELETE_COURSE_SUCCESS,
+    };
+};
+
 export const loadCourses = () => {
     console.debug('1: Dispatch initial load via promise.');
     return (dispatch) => {
@@ -44,6 +51,18 @@ export const saveCourse = (course: CourseEntity) => {
         return courseApi.saveCourse(course).then((savedCourse) => {
             course.id ? dispatch(updateCourseSuccess(savedCourse)) :
                 dispatch(createCourseSuccess(savedCourse));
+        }).catch((error) => {
+            dispatch(ajaxCallError());
+            throw(error);
+        });
+    };
+};
+
+export const deleteCourse = (courseId: string) => {
+    return (dispatch) => {
+        dispatch(beginAjaxCall());
+        return courseApi.deleteCourse(courseId).then((curses) => {
+            dispatch(deleteCourseSuccess(curses));
         }).catch((error) => {
             dispatch(ajaxCallError());
             throw(error);

@@ -100,7 +100,7 @@ class CourseApi {
         // Bug fix for issue #6 - Now returns since return is implied on arrow funcs without braces.
         const indexOfCourseToDelete = courses.findIndex(course => course.id == courseId );
         courses.splice(indexOfCourseToDelete, 1);
-        resolve();
+        resolve(Object.assign([], courses));
       }, delay);
     });
   }
