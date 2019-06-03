@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Example Project</string>
+    <string name="textView_name">My Great App</string>
+    <string name="button">Button</string>
 </resources>
