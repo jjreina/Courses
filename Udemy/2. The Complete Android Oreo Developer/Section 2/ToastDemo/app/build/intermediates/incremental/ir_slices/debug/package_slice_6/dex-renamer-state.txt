@@ -1,4 +1,0 @@
-#Tue Jun 04 18:09:32 CEST 2019
-base.0=J\:\\Dev\\github\\Courses\\Udemy\\2. The Complete Android Oreo Developer Course\\Section 2\\ToastDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
-path.0=classes.dex
-renamed.0=classes.dex
