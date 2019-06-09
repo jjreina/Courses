@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "J:\\Dev\\github\\Courses\\Udemy\\2. The Complete Android Oreo Developer Course\\Section 2\\ImagesSwitcher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\vaio\\.gradle\\caches\\transforms-2\\files-2.1\\c3ee58e98f0eef9d37b8c595e97063d1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c3ee58e98f0eef9d37b8c595e97063d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2b188083970765efcb62a01cbf77d965\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\690c226c25a9fd1354b6aaca1835313b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2e3945edcc3a08f47ee3e5ed9220cc93\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ba220a614019f368949473eba13dddd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c8f08b5c1706a1f37972d1be4ea4afe9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\7005f5344df99e42442ab7c16b17fbc9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\18384662877ccfc7129cf0d68fa58b18\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a8586a5b3c389ed3d104e66f37b47a25\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b2f9cf93c2006adb2e9715651c1c1e83\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cf244c794c2f06e03986c145e299451c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a97538a4199e8d07fec13e00e1e8df02\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c15b4ff9fcb115eafdbdfc4906f00209\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fd9ae9944e43b5753d5ac44a01445a2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b369e3980a0682cc9c02f01f61840129\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\4adb3bb2e484de54aabff8da6e3c3cfb\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c00252701c89e70c63628f485a49b27f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\234b371e176873ec43518d163c336456\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\11480d62505103e2f2cb922e4a79e01f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ddd031494e34da012732c46cbb62e3e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\43e7af97b1a3f8a75584270a9523b31e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\f6032a7325121d37c2ca0f59fa8cb19d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\421483a19591b5385a1863804db146cd\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fe206c4ec749f64004bd152a54c2c86a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ef0078e6deb6ba19c52616ea06959dc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cb0818183f444270a097077f6be0e7ba\AndroidManifest.xml:17:1-22:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2b188083970765efcb62a01cbf77d965\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2b188083970765efcb62a01cbf77d965\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\4adb3bb2e484de54aabff8da6e3c3cfb\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\4adb3bb2e484de54aabff8da6e3c3cfb\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:11:9-40
+activity#juan.reina.toastdemo.MainActivity
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c3ee58e98f0eef9d37b8c595e97063d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c3ee58e98f0eef9d37b8c595e97063d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2b188083970765efcb62a01cbf77d965\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2b188083970765efcb62a01cbf77d965\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\690c226c25a9fd1354b6aaca1835313b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\690c226c25a9fd1354b6aaca1835313b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2e3945edcc3a08f47ee3e5ed9220cc93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\2e3945edcc3a08f47ee3e5ed9220cc93\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ba220a614019f368949473eba13dddd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ba220a614019f368949473eba13dddd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c8f08b5c1706a1f37972d1be4ea4afe9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c8f08b5c1706a1f37972d1be4ea4afe9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\7005f5344df99e42442ab7c16b17fbc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\7005f5344df99e42442ab7c16b17fbc9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\18384662877ccfc7129cf0d68fa58b18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\18384662877ccfc7129cf0d68fa58b18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a8586a5b3c389ed3d104e66f37b47a25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a8586a5b3c389ed3d104e66f37b47a25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b2f9cf93c2006adb2e9715651c1c1e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b2f9cf93c2006adb2e9715651c1c1e83\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cf244c794c2f06e03986c145e299451c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cf244c794c2f06e03986c145e299451c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a97538a4199e8d07fec13e00e1e8df02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\a97538a4199e8d07fec13e00e1e8df02\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c15b4ff9fcb115eafdbdfc4906f00209\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c15b4ff9fcb115eafdbdfc4906f00209\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fd9ae9944e43b5753d5ac44a01445a2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fd9ae9944e43b5753d5ac44a01445a2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b369e3980a0682cc9c02f01f61840129\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\b369e3980a0682cc9c02f01f61840129\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ab66de88a0bedde57e08a584b2c6f603\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\4adb3bb2e484de54aabff8da6e3c3cfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\4adb3bb2e484de54aabff8da6e3c3cfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c00252701c89e70c63628f485a49b27f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\c00252701c89e70c63628f485a49b27f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\234b371e176873ec43518d163c336456\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\234b371e176873ec43518d163c336456\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\11480d62505103e2f2cb922e4a79e01f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\11480d62505103e2f2cb922e4a79e01f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ddd031494e34da012732c46cbb62e3e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\ddd031494e34da012732c46cbb62e3e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\43e7af97b1a3f8a75584270a9523b31e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\43e7af97b1a3f8a75584270a9523b31e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\f6032a7325121d37c2ca0f59fa8cb19d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\f6032a7325121d37c2ca0f59fa8cb19d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\421483a19591b5385a1863804db146cd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\421483a19591b5385a1863804db146cd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fe206c4ec749f64004bd152a54c2c86a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\fe206c4ec749f64004bd152a54c2c86a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ef0078e6deb6ba19c52616ea06959dc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\1ef0078e6deb6ba19c52616ea06959dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cb0818183f444270a097077f6be0e7ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\vaio\.gradle\caches\transforms-2\files-2.1\cb0818183f444270a097077f6be0e7ba\AndroidManifest.xml:20:5-44
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		ADDED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
+		INJECTED from J:\Dev\github\Courses\Udemy\2. The Complete Android Oreo Developer Course\Section 2\ToastDemo\app\src\main\AndroidManifest.xml
