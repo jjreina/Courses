@@ -1,4 +1,0 @@
-#Mon Jun 03 14:24:32 CEST 2019
-base.0=C\:\\Users\\vaio\\AndroidStudioProjects\\InteractivityDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
-path.0=classes.dex
-renamed.0=classes.dex
