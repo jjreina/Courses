@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Basic Phrases</string>
+    <string name="button1x1_text">Do you speak English?</string>
+    <string name="button1x2_text">Good Evening</string>
+    <string name="button2x1_text">Hello</string>
+    <string name="button2x2_text">How are you?</string>
+    <string name="button3x1_text">I live in...</string>
+    <string name="button3x2_text">My name is...</string>
+    <string name="button4x1_text">Please</string>
+    <string name="button4x2_text">Welcome</string>
 </resources>
