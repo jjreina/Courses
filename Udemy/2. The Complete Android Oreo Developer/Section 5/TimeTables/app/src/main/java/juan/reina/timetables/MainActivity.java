@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void initializeReciclerView() {
         recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.HORIZONTAL));
     }
 
     @Override
