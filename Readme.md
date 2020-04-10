@@ -1,6 +1,1 @@
-# Courses Repository.
-* This Repo contains a set of courses related to the web developer.
-* The courses are from:
-    *   Coursera
-    *   Pluralsight
-    *   Udemy
+# The Complete JavaScript Course 2020: Build Real Projects! from **Udemy**

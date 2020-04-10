@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Sound Demo</string>
-    <string name="play_button">Play</string>
-    <string name="pause_button">Pause</string>
-    <string name="stop_button">Stop</string>
-</resources>
