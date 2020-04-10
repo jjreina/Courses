@@ -1,8 +1,2 @@
-# Courses Repository.
-* This Repo contains a set of courses related to the web developer.
-* The courses are from:
-    *   Coursera
-        - The Complete Javascript Course
-        - The Complete Android Oreo Developer
-    *   Pluralsight
-    *   Udemy
+# The Complete Android Oreo Developer
+Android O App Development using **Java & Kotlin**
