@@ -1,1 +1,0 @@
-# First course of Wordpress.
