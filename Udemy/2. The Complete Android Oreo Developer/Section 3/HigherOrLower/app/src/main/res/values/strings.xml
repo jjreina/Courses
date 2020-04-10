@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Higher Or Lower</string>
-    <string name="text_view_text">I´m thinking in a number between 1 and 20</string>
-    <string name="text_view2_text">Can you guess it?</string>
-    <string name="button_text">Guess!</string>
-</resources>

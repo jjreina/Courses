@@ -5,4 +5,5 @@
         - The Complete Javascript Course
         - The Complete Android Oreo Developer
     *   Pluralsight
+        - Reactjs Getting Started
     *   Udemy
