@@ -5,6 +5,7 @@
     *   Pluralsight
         - Reactjs Getting Started
         - SPA with VUE
+        - Reactjs Fundamentals
     *   Udemy
         - The Complete Javascript Course
         - The Complete Android Oreo Developer
