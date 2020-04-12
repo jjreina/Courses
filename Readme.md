@@ -3,6 +3,7 @@
 * The courses are from:
     *   Coursera
         - HTML, CSS and Javascript
+        - FrontEnd Web UI Frameworks and Tools
     *   Pluralsight
         - Reactjs Getting Started
         - SPA with VUE (Incomplete)
