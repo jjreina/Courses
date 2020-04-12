@@ -7,6 +7,7 @@
         - SPA with VUE (Incomplete)
         - Reactjs Fundamentals
         - Building Applications with React and Flux
+        - Building Applications with React and Redux
     *   Udemy
         - The Complete Javascript Course
         - The Complete Android Oreo Developer
