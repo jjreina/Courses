@@ -4,7 +4,7 @@
     *   Coursera
     *   Pluralsight
         - Reactjs Getting Started
-        - SPA with VUE
+        - SPA with VUE (Incomplete)
         - Reactjs Fundamentals
         - Building Applications with React and Flux
     *   Udemy
