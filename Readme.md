@@ -1,4 +1,4 @@
-# Fourth course of eight.
+# Building Applications with React and Redux.
 This project is a customized version of the project proposed on Pluralsight site. Where versions as react, bootstrap, redux... have been updated.
 The project hava been implemented using typescript and tslint.
 * Run dev version:
