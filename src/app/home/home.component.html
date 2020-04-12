@@ -1,0 +1,32 @@
+
+<div class="courses-panel">
+
+    <h3>All Courses</h3>
+
+
+    <mat-tab-group>
+
+        <mat-tab label="Beginners">
+
+            <app-courses-card-list (courseEdited)="reloadCourses()"
+                    [courses]="beginnersCourses$ | async">
+ç
+            </app-courses-card-list>
+
+        </mat-tab>
+
+        <mat-tab label="Advanced">
+
+            <app-courses-card-list (courseEdited)="reloadCourses()"
+                    [courses]="advancedCourses$ | async"
+
+            ></app-courses-card-list>
+
+        </mat-tab>
+
+    </mat-tab-group>
+
+
+
+</div>
+
