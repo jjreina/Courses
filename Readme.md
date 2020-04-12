@@ -1,11 +1,7 @@
-# Courses Repository.
-* This Repo contains a set of courses related to the web developer.
-* The courses are from:
-    *   Coursera
-    *   Pluralsight
-        - Reactjs Getting Started
-        - SPA with VUE
-        - Reactjs Fundamentals
-    *   Udemy
-        - The Complete Javascript Course
-        - The Complete Android Oreo Developer
+# Building Applications with React and Flux.
+This project is an improved version of the project proposed in this course. Where versions as react, bootstrap, flux... have been updated and new libraries as lodash and react-rourter has been used.
+The project hava been implemented using typescript and tslint.
+* Webpack version:
+    * *npm install*
+    * *npm run start*
+    * Go to your browser and type *localhost:8081*
