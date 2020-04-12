@@ -2,6 +2,7 @@
 * This Repo contains a set of courses related to the web developer.
 * The courses are from:
     *   Coursera
+        - HTML, CSS and Javascript
     *   Pluralsight
         - Reactjs Getting Started
         - SPA with VUE (Incomplete)
