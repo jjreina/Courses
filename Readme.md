@@ -1,12 +1,13 @@
-# Courses Repository.
-* This Repo contains a set of courses related to the web developer.
-* The courses are from:
-    *   Coursera
-    *   Pluralsight
-        - Reactjs Getting Started
-        - SPA with VUE (Incomplete)
-        - Reactjs Fundamentals
-        - Building Applications with React and Flux
-    *   Udemy
-        - The Complete Javascript Course
-        - The Complete Android Oreo Developer
+# Fourth course of eight.
+This project is a customized version of the project proposed on Pluralsight site. Where versions as react, bootstrap, redux... have been updated.
+The project hava been implemented using typescript and tslint.
+* Run dev version:
+    * *npm install*
+    * *npm run start:dev*
+    * Go to your browser and type *localhost:8081*
+
+* Run prod version:
+    * *npm install*
+    * *npm run build:prod*
+    * *npm run start:prod*
+    * Go to your browser and type *localhost:3000*
