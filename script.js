@@ -49,6 +49,24 @@ switch (true) {
         break;
     default:
         console.log(`${firstName} is a man.`);
-    
-
 }
+
+// Truthy and Falsy Values and Equality Operators
+let height = '';
+
+if (height) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable is NOT been defined');
+}
+
+// Equality operators
+let value = 1
+if (value === 1) {
+    console.log('The === equal operator');
+} 
+
+value = '1'
+if (value == 1) {
+    console.log('The == equal operator');
+} 
