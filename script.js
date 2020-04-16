@@ -70,3 +70,10 @@ value = '1'
 if (value == 1) {
     console.log('The == equal operator');
 } 
+
+// Functions
+function calculateAge(birthYear) {
+    return new Date().getFullYear() - birthYear
+}
+
+console.log(calculateAge(1979));
