@@ -116,3 +116,15 @@ console.log(names.length);
 names.shift();
 console.log(names);
 console.log(names.length);
+
+// Objects and properties
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1979,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: true
+}
+console.log(john.firstName);
+console.log(john['lastName']);
