@@ -11,7 +11,7 @@ console.log(BMIMark, BMIJohn);
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 
-// The Ternary Operartor
+// The Ternary Operator
 const firstName = ' John';
 let age = 16;
 
@@ -19,7 +19,7 @@ age >= 18 ? console.log(`${firstName} drinks bear`) : console.log(`${firstName} 
 let drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
-// Switch Statemenrs
+// Switch Statements
 const job = 'instructor';
 switch (job) {
     case 'teacher':
@@ -95,3 +95,24 @@ let whatDoYouDo = (job, firstName) => {
 console.log(whatDoYouDo('teacher', 'John'));
 console.log(whatDoYouDo('designer', 'Jane'));
 console.log(whatDoYouDo('retired', 'Mark'));
+
+// Arrays
+let names = ['John', 'Mark', 'Jane'];
+let years = new Array(1990, 1960, 1948);
+
+console.log(names);
+console.log(names.length);
+console.log(names[2]);
+
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+names.push('Erik');
+names.unshift('Pol');
+console.log(names);
+console.log(names.length);
+names.pop();
+console.log(names);
+console.log(names.length);
+names.shift();
+console.log(names);
+console.log(names.length);
