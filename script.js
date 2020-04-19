@@ -117,14 +117,19 @@ names.shift();
 console.log(names);
 console.log(names.length);
 
-// Objects and properties
+// Objects, properties and Methods
 const john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1979,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: 'teacher',
-    isMarried: true
+    isMarried: true,
+    calcAge: function() {
+        return new Date().getFullYear() - this.birthYear;
+    }
 }
 console.log(john.firstName);
 console.log(john['lastName']);
+console.log(john.calcAge());
+
