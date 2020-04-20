@@ -133,3 +133,22 @@ console.log(john.firstName);
 console.log(john['lastName']);
 console.log(john.calcAge());
 
+// Loops
+for(let i = 0; i < 10; i++) {
+    console.log(i)
+}
+
+const johnArray = ['John', 'Smith', 1990, 'designer', false];
+
+for (const value of johnArray) {
+    console.log(value);
+}
+
+for (const key in johnArray) {
+    console.log(key);
+}
+
+const johnReverse = johnArray.reverse();
+for (const value of johnReverse) {
+    console.log(value);
+}
