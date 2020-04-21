@@ -36,7 +36,6 @@ if (john.calcBMI() > mark.calcBMI()) {
     console.log(`${mark.name} has the highest BMI.`);
 } else {
     console.log(`${john.name} and ${mark.name} have the same BMI`);
-    
 }
 
  
