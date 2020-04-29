@@ -1,6 +1,25 @@
 /**********************************************
 *** GENERAL
 **********************************************/
+.final-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 20px;
+    font-family: Lato;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: ridge;
+}   
+
+.final-score:focus {outline: none;}
 
 * {
     margin: 0;
@@ -120,7 +139,7 @@ button {
 }
 
 button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover i { margin-right: 20px;}
 
 button:focus {
     outline: none;
@@ -140,6 +159,7 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
+.btn-final-score { top: 530px; left: 60%}
 
 .dice {
     position: absolute;
