@@ -9,7 +9,8 @@ Change the game to follow these rules:
 let scores, roundScore, activePlayer, gamePlaying, lastDice, winningScores;
 const defaultWinningScore = 100;
 
-let diceDOM = document.querySelector('.dice');
+let diceDOM_1 = document.getElementById('dice-1');
+let diceDOM_2 = document.getElementById('dice-2');
 
 function init() {
     scores = [0, 0];
@@ -17,7 +18,8 @@ function init() {
     roundScore = 0;
     gamePlaying = true;
     
-    document.querySelector('.dice').style.display = 'none';
+    diceDOM_1.style.display = 'none';
+    diceDOM_2.style.display = 'none';
 
     document.getElementById('score-0').textContent = 0;
     document.getElementById('score-1').textContent = 0;
@@ -43,28 +45,44 @@ function nextPlayer() {
     document.querySelector('.player-0-panel').classList.toggle('active');
     document.querySelector('.player-1-panel').classList.toggle('active');
 
-    diceDOM.style.display = 'none';
+    diceDOM_1.style.display = 'none';
+    diceDOM_2.style.display = 'none';
 }
 
 init();
 
 document.querySelector('.btn-roll').addEventListener('click', () => {
     if (gamePlaying) {
-        let  dice = Math.floor(Math.random() * 6) + 1;
-        diceDOM.style.display = 'block';
-        diceDOM.src = `img/dice-${dice}.png`;
-        
-        if (dice === 6 && lastDice === 6) {
-            scores[activePlayer] = 0;
-            document.getElementById(`score-${activePlayer}`).textContent = 0;
-            nextPlayer();
-        } else if (dice !== 1) {
-            roundScore += dice;
+        let dice_1 = Math.floor(Math.random() * 6) + 1;
+        let dice_2 = Math.floor(Math.random() * 6) + 1;
+
+        diceDOM_1.style.display = 'block';
+        diceDOM_2.style.display = 'block';
+
+        diceDOM_1.src = `img/dice-${dice_1}.png`;
+        diceDOM_2.src = `img/dice-${dice_2}.png`;
+       
+        /* Challenge 2
+            if (dice === 6 && lastDice === 6) {
+                scores[activePlayer] = 0;
+                document.getElementById(`score-${activePlayer}`).textContent = 0;
+                nextPlayer();
+            } else if (dice !== 1) {
+                roundScore += dice;
+                document.getElementById(`current-${activePlayer}`).textContent = roundScore;
+            } else {
+                nextPlayer();
+            }
+            lastDice = dice;
+        */
+
+        // Challenge 3
+        if (dice_1 !== 1 && dice_2 !== 1) {
+            roundScore += dice_1 + dice_2;
             document.getElementById(`current-${activePlayer}`).textContent = roundScore;
         } else {
             nextPlayer();
         }
-        lastDice = dice;
     }
 });
 
@@ -75,7 +93,8 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
         
         if (scores[activePlayer] >= winningScores) {
             document.getElementById(`name-${activePlayer}`).textContent = 'Winner!';
-            diceDOM.style.display = 'none';
+            diceDOM_1.style.display = 'none';
+            diceDOM_2.style.display = 'none';
             document.querySelector(`.player-${activePlayer}-panel`).classList.add('winner');
             document.querySelector(`.player-${activePlayer}-panel`).classList.remove('active');
             gamePlaying = false;
