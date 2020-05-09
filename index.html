@@ -8,13 +8,17 @@
     >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Photo</title>
+    <title>Start Wars</title>
     <style>
         header{
-            background: url(img/sw_background.png);
-            background-size: auto;
+            background: url(img/sw_background.jpg);
+            background-size: cover;
             background-position: center;
             min-height: 1000px;
+        }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
         }
         @media screen and (max-width: 670px){
             header{
@@ -44,11 +48,47 @@
             </div>
         </nav>
     </header>
+    <section class="container section" id="photo´s">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/ship.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Space Ship</h2>
+                <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta commodi 
+                natus repellat voluptatibus fugit. Dolore, mollitia quos accusamus exercitationem 
+                consequuntur sed sunt, facilis dignissimos, debitis natus ea est dolores.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/trooper.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1">
+                <h2 class="indigo-text text-darken-4">Shock Trooper</h2>
+                <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta commodi 
+                natus repellat voluptatibus fugit. Dolore, mollitia quos accusamus exercitationem 
+                consequuntur sed sunt, facilis dignissimos, debitis natus ea est dolores.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/troopers.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Troopers</h2>
+                <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse dicta commodi 
+                natus repellat voluptatibus fugit. Dolore, mollitia quos accusamus exercitationem 
+                consequuntur sed sunt, facilis dignissimos, debitis natus ea est dolores.</p>
+            </div>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
         });
     </script>
 </html>
