@@ -20,11 +20,27 @@
             padding-top: 4vw;
             padding-bottom: 4vw;
         }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab .a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
         @media screen and (max-width: 670px){
             header{
                 min-height: 500px;
             }    
         }
+        /*.row
+        {
+            border:5px solid #42a5f5;  
+            margin-top:10px;
+        }
+        .col
+        {
+            border:5px solid red;  
+            margin-top:10px;
+        }*/
     </style>
 </head>
 <body>
@@ -92,11 +108,35 @@
     </div>
 
     <!-- services / taps -->
-    <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
-    </div>
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">The force....</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#light_side" class="indigo-text text-darken-4">light_side</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#dark_side" class="indigo-text text-darken-4">dark_side</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="light_side">
+                    <p class="flow-text indigo-text text-darken-4">LIGHT SIDE</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+                </div>
+                <div class="col s12" id="dark_side">
+                    <p class="flow-text indigo-text text-darken-4">DARK SIDE</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nulla, ex eligendi saepe molestiae magnam quia dolorem quis, atque dolor ab laudantium voluptates, qui sequi delectus doloremque! Minus, similique numquam!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
      <!-- parallax -->
      <div class="parallax-container">
@@ -119,6 +159,8 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.tabs').tabs('select', 'light-side');
         });
     </script>
 </html>
