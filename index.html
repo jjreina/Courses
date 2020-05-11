@@ -26,6 +26,9 @@
         .tabs .tab .a:focus, .tabs .tab a:focus.active{
             background: transparent;
         }
+        .icon{
+            vertical-align: sub;
+        }
         @media screen and (max-width: 670px){
             header{
                 min-height: 500px;
@@ -149,7 +152,7 @@
     <section class="section container" id="contact">
         <div class="row">
             <div class="col s12 l5">
-                <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+                <h2 class="indigo-text text-darken-4">Get In Touch<img src="img/falcon.png" alt="" class="icon" style="padding-left: 20px;"></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate quam vel obcaecati similique eos est, assumenda earum hic? Possimus asperiores ad harum natus tenetur temporibus distinctio, recusandae odio delectus.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate quam vel obcaecati similique eos est, assumenda earum hic? Possimus asperiores ad harum natus tenetur temporibus distinctio, recusandae odio delectus.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptate quam vel obcaecati similique eos est, assumenda earum hic? Possimus asperiores ad harum natus tenetur temporibus distinctio, recusandae odio delectus.</p>
@@ -186,20 +189,53 @@
                         </p>
                     </div>
                     <div class="input-field center">
-                        <button class="btn  indigo darken-4">Sugmit</button>
+                        <button class="btn  indigo darken-4">Submit</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    <!-- 
+    Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> 
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    -->
+    <!-- footer -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About The Force</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur autem reprehenderit commodi! Quidem ex nisi tenetur? Quas maxime reprehenderit voluptatem voluptas. Enim, esse error vero eaque eveniet quibusdam mollitia!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tenetur autem reprehenderit commodi! Quidem ex nisi tenetur? Quas maxime reprehenderit voluptatem voluptas. Enim, esse error vero eaque eveniet quibusdam mollitia!</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                    <li><a href="" class="grey-text text-lighten-3 text-lighten-3">Facebook</a></li>
+                    <li><a href="" class="grey-text text-lighten-3 text-lighten-3">Twitter</a></li>
+                    <li><a href="" class="grey-text text-lighten-3 text-lighten-3">Linked In</a></li>
+                    <li><a href="" class="grey-text text-lighten-3 text-lighten-3">Instagram</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">
+                <label type="text">
+                    <span>&copy; 2020 JJREINA & Powered by <a href="http://www.freepik.com">&copy; Freepik</a> & <a href="https://www.flaticon.com/">&copy; Flaticon</a></span>
+                    <img src="img/transport.png" alt="" class="icon">
+                </label>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         // Inialization with Materialize
-        /*var tabs = document.querySelector('.tabs')
+        var tabs = document.querySelector('.tabs')
         tabsInstance = M.Tabs.init(tabs);
-        tabsInstance.select('light_side');*/
+        tabsInstance.select('light_side');
 
         // Inialization with jQuery
         $(document).ready(function() {
