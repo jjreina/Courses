@@ -58,6 +58,15 @@
                     <li><a href="#">Photo´s</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small orange darken-3" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small  blue-grey darken-1" data-tooltip="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#" class="tooltipped btn-floating btn-small lime" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
                     <li><a href="#">Photo´s</a></li>
@@ -234,8 +243,13 @@
     <script>
         // Inialization with Materialize
         var tabs = document.querySelector('.tabs')
-        tabsInstance = M.Tabs.init(tabs);
+        var tabsInstance = M.Tabs.init(tabs);
         tabsInstance.select('light_side');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var tooltip = document.querySelectorAll('.tooltipped');
+            M.Tooltip.init(tooltip);
+        });
 
         // Inialization with jQuery
         $(document).ready(function() {
