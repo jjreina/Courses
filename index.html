@@ -55,9 +55,9 @@
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Photo´s</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#photos">Photo´s</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#" class="tooltipped btn-floating btn-small orange darken-3" data-tooltip="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a></li>
@@ -69,14 +69,14 @@
                     </a></li>
                 </ul>
                 <ul class="sidenav grey lighten-2" id="mobile-menu">
-                    <li><a href="#">Photo´s</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#photos">Photo´s</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="container section" id="photo´s">
+    <section class="container section scrollspy" id="photos">
         <div class="row">
             <div class="col s12 l4">
                 <img src="img/ship.jpg" alt="" class="responsive-img materialboxed">
@@ -120,7 +120,7 @@
     </div>
 
     <!-- services / taps -->
-    <section class="container section" id="services">
+    <section class="container section scrollspy" id="services">
         <div class="row">
             <div class="col s12 l4">
                 <h2 class="indigo-text text-darken-4">The force....</h2>
@@ -158,7 +158,7 @@
     </div>
 
     <!-- contact form -->
-    <section class="section container" id="contact">
+    <section class="section container scrollspy" id="contact">
         <div class="row">
             <div class="col s12 l5">
                 <h2 class="indigo-text text-darken-4">Get In Touch<img src="img/falcon.png" alt="" class="icon" style="padding-left: 20px;"></h2>
@@ -249,6 +249,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             var tooltip = document.querySelectorAll('.tooltipped');
             M.Tooltip.init(tooltip);
+            var scrollspy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollspy);
         });
 
         // Inialization with jQuery
