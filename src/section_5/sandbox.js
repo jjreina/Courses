@@ -64,4 +64,30 @@ obj1.age = 30;
 console.log(obj1.age);
 console.log(obj2.age);
 
+//* Passing function as argument *//
+let years = [1979, 1980, 1981, 1982, 1983, 2015];
+
+calculateAge = (year) => {
+    return new Date().getFullYear() - year;
+}
+
+isFullAge = (age) => {
+    return age >= 18;
+}
+
+arrayCalc = (arr, fn) => {
+    let arrRes = [];
+    arr.forEach(element => {
+        arrRes.push(fn(element));
+    });
+    return arrRes;
+}
+
+let ages = arrayCalc(years, calculateAge);
+let fullAges = arrayCalc(ages, isFullAge);
+console.log(ages);
+console.log(fullAges);
+
+
+
 
