@@ -44,3 +44,24 @@ let jane_2 = Object.create(personProto, {
     yearOfBirth: { value: '1982' },
     job: { value: 'designer' },
 })
+
+//* Primitives vs objects *//
+// Primitives
+let a = 23;
+let b = a;
+a = 46;
+console.log(a);
+console.log(b);
+
+// Objects
+let obj1 = {
+    name: 'John',
+    age: 26
+};
+
+let obj2 = obj1;
+obj1.age = 30;
+console.log(obj1.age);
+console.log(obj2.age);
+
+
