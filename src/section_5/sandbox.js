@@ -88,6 +88,35 @@ let fullAges = arrayCalc(ages, isFullAge);
 console.log(ages);
 console.log(fullAges);
 
+//* Functions returning functions *//
+interviewQuestion = (job) => {
+    if (job === 'designer') {
+        return (name) => {
+            console.log(`${name}, can you please explain what UX design is`);
+        }
+    } else if (job === 'teacher') {
+        return (name) => {
+            console.log(`What subject do you teach, ${name}?`);
+        }
+    } else {
+        return (name) => {
+            console.log(`Hello ${name}, what do you do?`);
+            
+        }
+    }
+}
+
+let teacherQuestion = interviewQuestion('teacher');
+let designerQuestion = interviewQuestion('designer');
+
+teacherQuestion('John');
+designerQuestion('John');
+designerQuestion('Jane');
+designerQuestion('Mark');
+designerQuestion('Mike');
+
+interviewQuestion('teacher')('Mary');
+
 
 
 
