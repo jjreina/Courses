@@ -117,6 +117,14 @@ designerQuestion('Mike');
 
 interviewQuestion('teacher')('Mary');
 
+//* Immediately Invoked Function Expression IIFE *//
+((goodLuck) => {
+    let score = Math.random() * 10;
+    console.log(score >= 5 - goodLuck);
+})(5);
+
+
+
 
 
 
