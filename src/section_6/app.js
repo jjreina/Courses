@@ -4,12 +4,15 @@ let budgetController = (() => {
 
 let uiController = (() => {
 
+    // private section
     const DOM_STRINGS = {
         inputType: '.add__type',
         inputDescription: '.add__description',
         inputValue: '.add__value',
         inputBtn: '.add__btn'
     }
+
+    // public section
     return {
         getInput: () => {
             return {
@@ -28,6 +31,7 @@ let uiController = (() => {
 
 let controller = ((budgetCtrl, uiCtrl) => {
 
+    // private section
     const ENTER_KEYCODE = 13;
     const DOM = uiCtrl.getDOMStrings();
 
@@ -37,13 +41,25 @@ let controller = ((budgetCtrl, uiCtrl) => {
         console.log(input);
     }
 
-    document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
+    let setupEventListeners = () => {
+        document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem);
+    
+        document.addEventListener('keypress', (event) => {
+            
+            if (event.keyCode === ENTER_KEYCODE || event.which === ENTER_KEYCODE) {
+                ctrlAddItem();
+            }
+        });
+    }
 
-    document.addEventListener('keypress', (event) => {
-        
-        if (event.keyCode === ENTER_KEYCODE || event.which === ENTER_KEYCODE) {
-            ctrlAddItem();
+    // public section
+    return {
+        init: function() {
+            console.log('Application has started');
+            setupEventListeners();
         }
-    });
+    }
 
 })(budgetController, uiController);
+
+controller.init();
