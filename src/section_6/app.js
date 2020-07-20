@@ -2,17 +2,21 @@ let budgetController = (() => {
 
     // private section
     // Function constructor
-    let Expense = (id, description, value) => {
-        this.id = id;
-        this.description = description;
-        this.value = value;
+    class Expense {
+        constructor(id, description, value) {
+            this.id = id;
+            this.description = description;
+            this.value = value;
+        }
     }
 
     // Function constructor
-    let Income = (id, description, value) => {
-        this.id = id;
-        this.description = description;
-        this.value = value;
+    class Income {
+        constructor (id, description, value) {
+            this.id = id;
+            this.description = description;
+            this.value = value;
+        }
     }
 
     let data = {
@@ -23,6 +27,30 @@ let budgetController = (() => {
         totals: {
             exp: 0,
             inc: 0
+        }
+    }
+
+    return {
+        addItem: (type, des, val) => {
+            let newItem, ID;
+
+            if (data.allItems[type].length > 0) {
+                ID = data.allItems[type][data.allItems[type].length - 1].id + 1;
+            } else {
+                ID = 0;
+            }
+
+            if (type === 'exp') {
+                newItem = new Expense(ID, des, val);
+            } else if (type === 'inc') {
+                newItem = new Income(ID, des, val);
+            }
+
+            data.allItems[type].push(newItem);
+            return newItem;
+        },
+        testing: () => {
+            console.log(data);
         }
     }
 
@@ -62,9 +90,12 @@ let controller = ((budgetCtrl, uiCtrl) => {
     const DOM = uiCtrl.getDOMStrings();
 
     let ctrlAddItem = () => {
+        let input, newItem;
+
         // Get the field input  data
-        let input = uiCtrl.getInput();
-        console.log(input);
+        input = uiCtrl.getInput();
+        // Add the item to the budget controller
+        newItem = budgetController.addItem(input.type, input.description, input.value);
     }
 
     let setupEventListeners = () => {
