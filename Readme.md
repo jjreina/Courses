@@ -16,4 +16,4 @@
         - [The Complete Android Oreo Developer (In progress)](https://github.com/jjreina/Courses/tree/udemy-the-complete-android-oreo-developer)
         - [Firebase & Firestore Masterclass (In progress)](https://github.com/jjreina/Courses/tree/udemy-firebase-firestone-masterclass)
     *   The net ninja
-        - [Materialize Tutorial](https://github.com/jjreina/Courses/tree/the-net-ninja-materialize)
+        - [Materialize Tutorial](https://github.com/jjreina/Courses/tree/the-net-ninja-materialize) -> Website hosting on firebase [*Try me!!*](https://materialize-start-wars.firebaseapp.com/)
