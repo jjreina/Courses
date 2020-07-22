@@ -44,4 +44,6 @@ Thumbs.db
 # Enviroment Files
 src/environments/
 
-.firebase/hosting.ZGlzdA.cache
+# Firebase Giles
+.firebase/
+.cache/
