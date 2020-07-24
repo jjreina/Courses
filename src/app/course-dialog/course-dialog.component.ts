@@ -4,6 +4,7 @@ import {Course} from '../model/course';
 import {FormBuilder, Validators, FormGroup} from '@angular/forms';
 import { CoursesService } from '../services/courses.service';
 import { core } from '@angular/compiler';
+import { AngularFireStorage } from '@angular/fire/storage';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class CourseDialogComponent implements OnInit {
         private fb: FormBuilder,
         private dialogRef: MatDialogRef<CourseDialogComponent>,
         @Inject(MAT_DIALOG_DATA) course: Course,
-        private coursesServices: CoursesService) {
+        private coursesServices: CoursesService,
+        private storage: AngularFireStorage) {
 
         this.course = course;
         const titles = course.titles;
@@ -31,6 +33,13 @@ export class CourseDialogComponent implements OnInit {
             longDescription: [titles.longDescription, Validators.required]
         });
 
+    }
+
+    uploadFile(event) {
+        const file: File = event.target.files[0];
+        const filePath = `courses/${this.course.id}/${file.name}`;
+        const task = this.storage.upload(filePath, file);
+        task.snapshotChanges().subscribe(console.log);
     }
 
     ngOnInit() {
