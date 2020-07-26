@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.afAuth.auth.signOut();
+    window.location.reload();
   }
 
 }
