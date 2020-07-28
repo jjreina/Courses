@@ -17,5 +17,5 @@ app.get('/courses', async (request, response) => {
 });
 
 export const getCourses = functions.https.onRequest(app);
-export {onAddCourse} from './lessons-counter';
+export {onAddCourse, onDeleteCourse} from './lessons-counter';
 
