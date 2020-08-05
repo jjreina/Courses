@@ -1,6 +1,4 @@
 node_modules
 .firebase
 dist/
-.cache/
-functions/
-src/
+
