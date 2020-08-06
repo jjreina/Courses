@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-css",
+  "version": "1.0.0",
+  "description": "* Tailwind is a css made up of utility classes.\r * Tutorial to create a simply website using this framework.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjreina/Courses/tree/the-net-ninja-Tailwind-CSS"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjreina/Courses/tree/the-net-ninja-Tailwind-CSS/issues"
+  },
+  "homepage": "https://github.com/jjreina/Courses/tree/the-net-ninja-Tailwind-CSS#readme",
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  }
+}
