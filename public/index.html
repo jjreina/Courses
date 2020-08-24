@@ -33,15 +33,10 @@
                 </ul>
             </nav>
         </div> <!-- end nav -->
-        <main class="px-16 py-6">
+        <main class="px-16 py-6 bg-gray-100">
             <div class="flex justify-center md:justify-end">
                <a href="#" class="text-primary">Log in</a>
                <a href="#" class="text-primary ml-2">Sing up</a>
-            </div>
-            <div class="flex items-end">
-                <div class="bg-red-500 h-4 w-6"></div>
-                <div class="bg-blue-500 h-8 w-6"></div>
-                <div class="bg-green-500 h-12 w-6"></div>
             </div>
             <header>
                 <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -51,11 +46,15 @@
                 <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
                 <div class="mt-8">
                     <!-- cards go here -->
-                    <div>
-                        <img src="img/drone.jpg" alt="">
-                        <div>
-                            <span>5 Bean Chilli Stew</span>
-                            <span>Recipe by Mario</span>
+                    <div class="bg-white rounded overflow-hidden shadow-md">
+                        <img src="img/drone.jpg" alt="drone" class="w-full h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Drone victory</span>
+                            <span class="block text-gray-500 text-sm">
+                                Photo by 
+                                <a href="https://unsplash.com/@luki90pl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_black" class="font-bold">Łukasz Nieścioruk</a> on 
+                                <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"  target="_black" class="font-bold">Unsplash</a>
+                            </span>
                         </div>
                     </div>
                 </div>
