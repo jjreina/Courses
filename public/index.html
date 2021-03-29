@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-600 font-body">
-    <div class="grid md:grid-cols-3"><!-- content wrapper -->
+    <div class="grid md:grid-cols-8"><!-- content wrapper -->
         <div class="md:col-span-1 md:flex md:justify-end"><!-- start nav -->
             <nav class="text-right">
                 <div class="flex justify-between items-center">
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-100 text-mammoth">
-                        <a href="/" class="hover:text-gray-700">Food Ninja</a>
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-500 text-mammoth">
+                        <a href="./" class="hover:text-gray-700">Drones Photos</a>
                     </h1>
                     <div class="px-4 cursor-pointer md:hidden" id="burger">
                         <svg class="w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -20,24 +20,24 @@
                     </div>
                 </div>
                 <ul class="text-sm mt-6 hidden md:block" id="menu">
-                    <li class="text-gray-700 font-bold py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-primary">
+                    <li class="text-gray-700 font-bold py-1" id="li_home">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white border-primary" id="a_home">
                             <span>Home</span>
                             <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                             </svg>
                         </a>
                     </li>
-                    <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white"> 
+                    <li class="py-1" id="li_about">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white" id="a_about"> 
                             <span>About</span>
                             <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
                         </a>
                     </li>
-                    <li class="py-1">
-                        <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                    <li class="py-1" id="li_contact">
+                        <a href="#" class="px-4 flex justify-end border-r-4 border-white" id="a_contact">
                             <span>Contact</span>
                             <svg class="w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
@@ -47,7 +47,7 @@
                 </ul>
             </nav>
         </div><!-- end nav -->
-        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+        <main class="px-16 py-6 bg-gray-100 md:col-span-6">
             <div class="flex justify-center md:justify-end">
                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
                <a href="#" class="btn text-primary ml-2  border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sing up</a>
@@ -61,7 +61,7 @@
                 <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
                     <div class="card hover:shadow-lg">
-                        <img src="img/curry.jpg" alt="drone" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/drone.jpg" alt="drone" class="w-full h-32 sm:h-56 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Drone victory</span>
                             <span class="block text-gray-500 text-sm">
@@ -78,37 +78,39 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/curry.jpg" alt="drone" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/harrison-kugler.jpg" alt="drone" class="w-full h-32 sm:h-56 object-cover">
                         <div class="m-4">
-                            <span class="font-bold">Drone victory</span>
+                            <span class="font-bold">DJI Mavic Mini</span>
                             <span class="block text-gray-500 text-sm">
-                                Photo by 
-                                <a href="https://unsplash.com/@luki90pl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_black" class="font-bold">Łukasz Nieścioruk</a> on 
-                                <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"  target="_black" class="font-bold">Unsplash</a>
+                                Photo by
+                                <a href="https://unsplash.com/@harrisonkugler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_black" class="font-bold">Harrison Kugler</a> on 
+                                <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_black" class="font-bold">Unsplash</a>
+  
                             </span>
                         </div>
                         <div class="badge">
                             <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
                             </svg>
-                            <span>Łukasz</span>
+                            <span>Harrison</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/curry.jpg" alt="drone" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/jonathan-lampel.jpg" alt="drone" class="w-full h-32 sm:h-56 object-cover">
                         <div class="m-5">
-                            <span class="font-bold">Drone victory</span>
+                            <span class="font-bold">Drone fly</span>
                             <span class="block text-gray-500 text-sm">
                                 Photo by 
-                                <a href="https://unsplash.com/@luki90pl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_black" class="font-bold">Łukasz Nieścioruk</a> on 
-                                <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"  target="_black" class="font-bold">Unsplash</a>
+                                <a href="https://unsplash.com/@jonlampel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_black" class="font-bold">Jonathan Lampel</a> on 
+                                <a href="https://unsplash.com/s/photos/drones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_black" class="font-bold">Unsplash</a>
+  
                             </span>
                         </div>
                         <div class="badge">
                             <svg class="w-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
                             </svg>
-                            <span>Łukasz</span>
+                            <span>Jonathan</span>
                         </div>
                     </div>
                 </div>
