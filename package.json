@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/jjreina/Courses/tree/the-net-ninja-Tailwind-CSS#readme",
   "dependencies": {
+    "@angular/cli": "^11.2.6",
     "tailwindcss": "^1.6.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }
