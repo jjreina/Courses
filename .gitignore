@@ -4,3 +4,4 @@ dist/
 .cache/
 functions/
 src/
+.idea/
