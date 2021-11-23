@@ -5,3 +5,5 @@ dist/
 functions/
 src/
 .idea/
+target/
+.github
