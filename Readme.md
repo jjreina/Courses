@@ -18,4 +18,5 @@
   * **The net ninja**
     * [Materialize Tutorial](https://github.com/jjreina/Courses/tree/the-net-ninja-materialize) -> Website hosting on firebase [*Try me!!*](https://materialize-start-wars.firebaseapp.com/)
     * [Tailwind CSS](https://github.com/jjreina/Courses/tree/the-net-ninja-Tailwind-CSS) -> Website hosting on firebase [*Try me!!*](https://tailwinds-css-drones.firebaseapp.com/)
-
+* **OpenWebinars**
+    * [Java projects with Apache Maven](https://github.com/jjreina/Courses/tree/openwebinars-java-projects-with-apache-maven)
