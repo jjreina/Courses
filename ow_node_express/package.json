@@ -1,0 +1,12 @@
+{
+  "name": "node-express",
+  "version": "0.0.0",
+  "description": "rest API",
+  "main": "index.js",
+  "repository": "https://github.com/jjreina/Courses/tree/openwebinars-api-rest-nodejs-express",
+  "author": "jjreina",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
