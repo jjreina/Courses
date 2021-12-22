@@ -1,10 +1,6 @@
-const express = require('express');
-const app = express();
+const app = require("./app");
 const port = 3000;
 
-app.get('/hello', (req, res) => {
-    res.status(200).send({"msg": "Hello World!"});
-});
 
 app.listen(port, () => {
     console.log(`Server working on http://localhost:${port}`);
