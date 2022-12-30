@@ -14,4 +14,9 @@ export const tasks = [
     title: "task three",
     description: "task three description",
   },
+  {
+    id: 3,
+    title: "task four",
+    description: "task four description",
+  },
 ];
