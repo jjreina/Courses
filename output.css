@@ -649,10 +649,6 @@ video {
   isolation: auto;
 }
 
-.col-start-1 {
-  grid-column-start: 1;
-}
-
 .col-start-2 {
   grid-column-start: 2;
 }
@@ -667,14 +663,6 @@ video {
 
 .col-end-4 {
   grid-column-end: 4;
-}
-
-.col-end-5 {
-  grid-column-end: 5;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
 }
 
 .row-start-2 {
