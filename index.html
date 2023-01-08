@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <script src="./node_modules/tw-elements/dist/js/index.min.js"></script>
     <title>Courses links page</title>
   </head>
   <body class="bg-slate-600">
@@ -15,17 +16,106 @@
           <img class="rounded-t-lg" src="./img/coursera.jpg" alt="" />
         </a>
         <div class="p-5">
-          <a href="#">
-            <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              Coursera
-            </h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            Coursera
+          </h5>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  HTML, CSS and Javascript.
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body py-4 px-5">
+                  <ul class="list-disc px-10">
+                    <li>
+                      <a
+                        href="https://github.com/jjreina/Courses/tree/coursera-html-css-js"
+                        >Branch Repository</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingTwo">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  FrontEnd Web UI Frameworks and Tools.
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body py-4 px-5">
+                  <ul class="list-disc px-10">
+                    <li>
+                      <a
+                        href="https://github.com/jjreina/Courses/tree/coursera-frontend-frameworks-and-tools"
+                        >Branch Repository</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingThree">
+                <button
+                  class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  FrontEnd AngularJS Framework (Incomplete).
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body py-4 px-5">
+                  <ul class="list-disc px-10">
+                    <li>
+                      <a
+                        href="https://github.com/jjreina/Courses/tree/coursera-frontend-frameworks-and-angularjs"
+                        >Branch Repository</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
