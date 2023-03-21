@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/jjreina/Courses/blob/openwebinars-react-for-beginners/Readme.md",
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "parcel": "^2.8.3"
