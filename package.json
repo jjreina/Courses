@@ -15,8 +15,11 @@
   "bugs": {
     "url": "https://github.com/jjreina/Courses/issues"
   },
-  "homepage": "https://github.com/jjreina/Courses/tree/openwebinars-react-for-beginners#readme",
+  "homepage": "https://github.com/jjreina/Courses/blob/openwebinars-react-for-beginners/Readme.md",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }
