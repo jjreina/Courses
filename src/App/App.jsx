@@ -12,17 +12,17 @@ const initialWishes = [
   { name: 'Go to the gym', done: false }
 ];
 
-const TEXT_TITLE = 'My wishlist with modern React'
-const TEXT_BUTTON = 'Archive done'
+const TEXT_TITLE = 'My wishlist with modern React';
+const TEXT_BUTTON = 'Archive done';
 
 const App = () => {
-  const [wishes, setWishes] = useState(initialWishes)
+  const [wishes, setWishes] = useState(initialWishes);
   return (
     <div className="app">
-      <Title text={TEXT_TITLE}/>
-      <Wishinput onNewWish={wish => setWishes([wish, ...wishes])} />
+      <Title text={TEXT_TITLE} />
+      <Wishinput onNewWish={(wish) => setWishes([wish, ...wishes])} />
       <WishList wishes={wishes} />
-      <ArchiveButton text={TEXT_BUTTON}/>
+      <ArchiveButton text={TEXT_BUTTON} />
     </div>
   );
 };
