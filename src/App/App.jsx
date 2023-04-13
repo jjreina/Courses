@@ -2,6 +2,8 @@
 import './App.css';
 import Wishinput from './Wishinput';
 import WishList from './WishList';
+import Title from './Title';
+import ArchiveButton from './ArchiveButton';
 
 const wishes = [
   { name: 'Travel to the moon', done: false },
@@ -10,14 +12,15 @@ const wishes = [
   { name: 'Go to the gym', done: false }
 ];
 
+const TEXT_TITLE = 'My wishlist with modern React'
+const TEXT_BUTTON = 'Archive done'
+
 const App = () => (
   <div className="app">
-    <h1>My wishlist with modern React</h1>
+    <Title text={TEXT_TITLE}/>
     <Wishinput />
     <WishList wishes={wishes} />
-    <button className="wish-clear" type="button">
-      Archive done
-    </button>
+    <ArchiveButton text={TEXT_BUTTON}/>
   </div>
 );
 
