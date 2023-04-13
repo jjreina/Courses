@@ -1,11 +1,11 @@
-﻿import React from 'react';
+﻿import React, { useState } from 'react';
 import './App.css';
 import Wishinput from './Wishinput';
 import WishList from './WishList';
 import Title from './Title';
 import ArchiveButton from './ArchiveButton';
 
-const wishes = [
+const initialWishes = [
   { name: 'Travel to the moon', done: false },
   { name: 'Make an intro course to React', done: true },
   { name: 'Pay the gym', done: true },
@@ -15,13 +15,16 @@ const wishes = [
 const TEXT_TITLE = 'My wishlist with modern React'
 const TEXT_BUTTON = 'Archive done'
 
-const App = () => (
-  <div className="app">
-    <Title text={TEXT_TITLE}/>
-    <Wishinput />
-    <WishList wishes={wishes} />
-    <ArchiveButton text={TEXT_BUTTON}/>
-  </div>
-);
+const App = () => {
+  const [wishes, setWishes] = useState(initialWishes)
+  return (
+    <div className="app">
+      <Title text={TEXT_TITLE}/>
+      <Wishinput onNewWish={wish => setWishes([wish, ...wishes])} />
+      <WishList wishes={wishes} />
+      <ArchiveButton text={TEXT_BUTTON}/>
+    </div>
+  );
+};
 
 export default App;
