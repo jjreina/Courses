@@ -22,5 +22,5 @@
   - **OpenWebinars**
     - [Java projects with Apache Maven](https://github.com/jjreina/Courses/tree/openwebinars-java-projects-with-apache-maven)
     - [React for beginners](https://github.com/jjreina/Courses/tree/openwebinars-react-for-beginners)
-  - **OpenWebinars**
+  - **Fazt**
     - [React App for beginners](https://github.com/jjreina/Courses/tree/fazt-react-begginer)
