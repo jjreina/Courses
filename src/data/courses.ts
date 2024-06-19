@@ -28,9 +28,21 @@ const openWebinarCourses: Array<string> = [
   "React for beginners",
 ];
 
-const faztCourses: Array<string> = [
-  "React App for beginners",
-];
+const faztCourses: Array<string> = ["React App for beginners"];
 
-export const courses = [courseraCoursers, pluralsightCourses, udemyCourses, theNetNinjaCourses, openWebinarCourses, faztCourses];
-export const plarforms = ["Coursera", "Pluralsight", "Udemy", "The Net Ninja", "OpenWebinar", "Fazt"];
+export const courses = [
+  courseraCoursers,
+  pluralsightCourses,
+  udemyCourses,
+  theNetNinjaCourses,
+  openWebinarCourses,
+  faztCourses,
+];
+export const plarforms = [
+  "Coursera",
+  "Pluralsight",
+  "Udemy",
+  "The Net Ninja",
+  "OpenWebinar",
+  "Fazt",
+];
