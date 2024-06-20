@@ -1,20 +1,20 @@
 const courseraCoursers: Array<string> = [
   "HTML, CSS and Javascript",
   "FrontEnd Web UI Frameworks and Tools",
-  "FrontEnd AngularJS Framework (Incomplete)",
+  "FrontEnd AngularJS Framework",
 ];
 
 const pluralsightCourses: Array<string> = [
   "Reactjs Getting Started",
-  "SPA with VUE (Incomplete)",
+  "SPA with VUE",
   "Reactjs Fundamentals",
   "Building Applications with React and Flux",
   "Building Applications with React and Redux",
 ];
 
 const udemyCourses: Array<string> = [
-  "The Complete Javascript Course (In progress)",
-  "The Complete Android Oreo Developer (In progress)",
+  "The Complete Javascript Course",
+  "The Complete Android Oreo Developer",
   "Firebase & Firestore Masterclass",
 ];
 
@@ -45,4 +45,12 @@ export const plarforms = [
   "The Net Ninja",
   "OpenWebinar",
   "Fazt",
+];
+export const sites = [
+  "https://www.coursera.org/courses",
+  "https://www.pluralsight.com/",
+  "https://www.udemy.com/",
+  "https://netninja.dev/",
+  "https://openwebinars.net/",
+  "https://www.faztweb.com/",
 ];

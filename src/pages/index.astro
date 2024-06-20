@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import BackImg from "../components/BackImg.astro";
 
-import { courses, plarforms } from "../data/courses";
+import { courses, plarforms, sites } from "../data/courses";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,15 +11,16 @@ import { courses, plarforms } from "../data/courses";
     <BackImg />
     <h1>My courses powered by <span class="text-gradient">Astro</span></h1>
     <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+      To get started, visit the Github reposetory <a
+        href="https://github.com/jjreina/Courses"
+        target="_blank"><code>https://github.com/jjreina/Courses</code></a
+      ><br />
     </p>
     <ul role="list" class="link-card-grid">
       {
         plarforms.map((platform, index) => (
           <Card
-            href="https://docs.astro.build/"
+            href={sites[index]}
             title={`Platform → ${platform}`}
             body={courses[index]}
           />
